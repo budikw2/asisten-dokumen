@@ -1,0 +1,760 @@
+# FORMAT DAN TEMPLATE (FILE 03)
+Katalog dokumen, menu per peran, template cadangan, formulir isian, dan pesan permintaan format. Dikelola oleh Admin Pipeline.
+
+## Petunjuk untuk Asisten Dokumen (jangan ditampilkan ke pengguna)
+- **Semua template di file ini berstatus CADANGAN dan BELUM RESMI.** Format resmi datang dari penerbit format ("pusat") lewat Format Aktif (File 01 Bagian 5) dan selalu menang. Jangan menyebut template di sini sebagai format resmi.
+- Daftar bagian di katalog hanya orientasi. Bila Format Aktif ada, ikuti persis (Kunci Struktur).
+- Tingkat risiko di Kartu Dokumen adalah bawaan. File 02 Bagian K dapat mengubahnya. Bila ragu, naikkan satu tingkat.
+- Nama peran pada kolom "Tanya ke" mengikuti File 02 Bagian F. Tampilkan nama orangnya bila terisi. Bila kosong, bilang: "Tanyakan ke atasan langsung atau Admin Pipeline."
+- Istilah dan ketentuan di bidang pengadaan, konstruksi, K3, dan pajak berubah. Katalog dan kamus hanya orientasi umum. Jangan menyebut sebuah ketentuan masih berlaku.
+
+---
+
+## 1. CARA MEMAKAI FILE INI
+
+| Bagian | Isi | Dipakai pada |
+|---|---|---|
+| 2 | Kartu Dokumen: katalog jenis dokumen beserta risiko, persiapan, dan tanya ke siapa | Langkah 2 dan 3 |
+| 3 | Menu dokumen menurut peran pengguna | Langkah 2 |
+| 4 | Paket dokumen menurut jenis pekerjaan | Langkah 2 |
+| 5 | Template Cadangan (BELUM RESMI) | Bagian 5.9 File 01 |
+| 6 | Formulir isian (wawancara untuk pemula) | Langkah 5 |
+| 7 | Pesan Permintaan Format | Langkah 4 |
+
+---
+
+## 2. KARTU DOKUMEN (KATALOG)
+
+Tampilkan ke pengguna dalam bentuk ini (satu dokumen per kartu):
+```
+[D-xx] [Nama dokumen]
+Kapan dipakai : [..]
+Risiko        : [Rendah / Sedang / Tinggi] -> yang meninjau: [peran]
+Persiapan     : [bahan yang perlu ada]
+Tanya ke      : [peran]
+```
+
+### 2.A Surat dan administrasi umum
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-01 | Surat resmi (keluar) | Rendah | Menyampaikan informasi, permohonan, atau pemberitahuan resmi ke pihak luar | Tujuan surat, nama dan jabatan penerima, rujukan, tanggal, penandatangan, nomor dari register | Document Controller (nomor), Manajer Proyek (isi) |
+| D-02 | Nota dinas / memo internal | Rendah | Koordinasi atau permintaan antarbagian di dalam firma | Penerima, perihal, latar singkat, tindak lanjut beserta PIC dan tenggat | Atasan langsung |
+| D-03 | Undangan rapat | Rendah | Mengundang pihak ke rapat | Agenda, tanggal, waktu, tempat atau tautan, daftar undangan | Admin Proyek |
+| D-04 | Notulen rapat | Rendah | Mencatat keputusan dan tindak lanjut rapat | Daftar hadir, agenda, catatan mentah, keputusan, PIC dan tenggat | Pimpinan rapat |
+| D-05 | Berita acara (umum) | Sedang | Mencatat kesepakatan atau kejadian yang ditandatangani para pihak | Para pihak dan jabatan, rujukan, uraian kesepakatan | Manajer Proyek, Admin Kontrak |
+| D-06 | Surat tugas / penunjukan personel | Sedang | Menugaskan orang untuk kegiatan atau proyek | Nama, jabatan, tugas, periode, dasar penugasan, penandatangan berwenang | HRD, Direksi |
+| D-07 | Surat balasan / klarifikasi ke klien | Sedang (Tinggi bila menyangkut klaim, denda, atau kewajiban hukum) | Menjawab surat, teguran, atau pertanyaan klien | Surat klien (bahan resmi), fakta dan bukti lapangan, sikap firma dari atasan | Manajer Proyek, Admin Kontrak, Legal |
+| D-08 | Surat kuasa | Tinggi | Memberi wewenang bertindak atas nama firma | Pemberi dan penerima kuasa, lingkup, jangka waktu | Legal, Direksi |
+| D-09 | Surat pernyataan | Tinggi | Menyatakan kondisi atau komitmen secara tertulis | Pihak yang menyatakan, isi yang dapat dibuktikan, penandatangan | Legal, Direksi |
+| D-10 | Pengumuman internal | Rendah | Memberi tahu seluruh tim | Isi, tanggal berlaku, pihak yang dihubungi | Atasan langsung |
+
+Surat yang awalnya Rendah naik tingkat bila memuat angka, klaim, sanksi, atau perubahan kontrak. Untuk D-09, jangan menyusun pernyataan yang tidak bisa dibuktikan.
+
+### 2.B Pra-proyek dan penawaran
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-20 | Profil perusahaan / ringkasan pengalaman | Sedang | Melengkapi penawaran atau memperkenalkan firma | Data resmi firma: legalitas, pengalaman, personel (dari arsip firma) | Admin Kontrak, Direksi |
+| D-21 | CV personel / tenaga ahli | Sedang | Melampirkan personel pada penawaran | Data dan sertifikat dari yang bersangkutan (kodekan data pribadi di chat) | HRD |
+| D-22 | Daftar periksa kelengkapan dokumen penawaran atau kualifikasi | Sedang | Memastikan semua persyaratan terpenuhi sebelum dikirim | Dokumen lelang, KAK, atau RFP (bahan resmi), dokumen yang sudah ada | Admin Kontrak, Estimator/QS |
+| D-23 | Usulan teknis / proposal teknis (konsultan) | Tinggi | Menjawab KAK pada penawaran jasa konsultansi | KAK, pengalaman, personel, metodologi, jadwal, Matriks Kepatuhan | Tenaga Ahli, Manajer Proyek |
+| D-24 | Narasi metode dan jadwal penawaran (kontraktor) | Tinggi | Menjelaskan cara dan urutan kerja pada penawaran konstruksi | Dokumen lelang, gambar dan spesifikasi, lingkup, sumber daya, jadwal | Manajer Proyek, Estimator/QS |
+| D-25 | Surat penawaran / surat pengantar penawaran | Tinggi | Menyampaikan penawaran resmi | Dokumen lelang, masa berlaku penawaran, penandatangan. **Nilai penawaran jangan ditempel di chat** (data MERAH) | Estimator/QS, Direksi |
+| D-26 | Narasi RAB / BoQ / analisis harga | Tinggi | Menjelaskan dasar penyusunan rincian biaya | Angka dari file hitung firma. Asisten hanya menarasikan dan memeriksa konsistensi, tidak menghitung | Estimator/QS |
+| D-27 | Surat penagihan / pengantar invoice | Tinggi | Meminta pembayaran | Rujukan kontrak, skema termin, berita acara terkait, nilai dan data pajak dari Keuangan | Keuangan, Admin Kontrak |
+
+Asisten tidak memutuskan sebuah penawaran lolos atau gugur, dan tidak mengatur harga.
+
+### 2.C Kontrak dan persiapan pelaksanaan
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-30 | Berita acara rapat persiapan pelaksanaan | Sedang | Mencatat kesepakatan awal pelaksanaan bersama pemberi tugas | Agenda, peserta, hasil, keputusan | Manajer Proyek, Admin Kontrak |
+| D-31 | Rencana kerja dan jadwal (narasi) | Sedang | Menjelaskan urutan kerja dan waktu | Kontrak (masa pelaksanaan), lingkup, jadwal dari file jadwal firma | Pelaksana/Site Manager, Manajer Proyek |
+| D-32 | Metode pelaksanaan | Sedang | Menjelaskan cara melaksanakan pekerjaan tertentu | Gambar, spesifikasi, sumber daya, urutan kerja, risiko | Pelaksana/Site Manager, HSE/K3 |
+| D-33 | Rencana mutu dan rencana pemeriksaan/pengujian | Sedang | Menetapkan cara menjaga mutu pekerjaan | Spesifikasi dan standar mutu dalam kontrak, daftar pengujian | QA/QC, Manajer Proyek |
+| D-34 | Dokumen K3 proyek (rencana keselamatan konstruksi, analisis bahaya, izin kerja) | Tinggi | Mengatur keselamatan pekerjaan | Lingkup, metode, hasil identifikasi bahaya dari HSE, ketentuan kontrak | HSE/K3 |
+| D-35 | Pengajuan persetujuan material | Sedang | Meminta persetujuan material sebelum dipakai | Spesifikasi kontrak, data produk, sertifikat atau hasil uji, lokasi pemakaian | QA/QC, Pelaksana/Site Manager |
+| D-36 | Permohonan pemeriksaan pekerjaan | Sedang | Meminta pemberi tugas atau pengawas memeriksa pekerjaan | Bagian pekerjaan, lokasi, waktu, bukti (foto, hasil ukur) | Pelaksana/Site Manager, QA/QC |
+
+Isi teknis keselamatan (D-34) bukan wewenang asisten. HSE yang menetapkan.
+
+### 2.D Pelaksanaan dan pelaporan
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-40 | Laporan harian | Sedang | Mencatat kegiatan lapangan hari itu | Tanggal, cuaca, jumlah pekerja, alat, material, pekerjaan, kendala, foto (semua dari pengamatan) | Pelaksana/Site Manager |
+| D-41 | Laporan mingguan | Sedang | Merangkum kemajuan satu minggu | Data harian, rencana dan realisasi dari file jadwal, kendala | Pelaksana/Site Manager, Manajer Proyek |
+| D-42 | Laporan bulanan | Sedang (Tinggi bila menjadi dasar pembayaran) | Merangkum kemajuan satu bulan | Seperti laporan mingguan, ditambah foto, hasil uji, status perubahan | Manajer Proyek, Estimator/QS |
+| D-43 | Berita acara pemeriksaan bersama / opname | Tinggi | Menyepakati volume atau kemajuan sebagai dasar pembayaran | Data ukur bersama, gambar, para pihak | Estimator/QS, Manajer Proyek |
+| D-44 | Permohonan pembayaran termin | Tinggi | Mengajukan pembayaran bertahap | Skema termin dari kontrak, berita acara kemajuan, nilai dari Keuangan | Keuangan, Admin Kontrak |
+| D-45 | Usulan perubahan kontrak (perpanjangan waktu, perubahan pekerjaan, addendum) | Tinggi | Mengajukan perubahan waktu, nilai, atau lingkup | Kontrak, kejadian dan buktinya, dampak waktu dan biaya dari Estimator | Manajer Proyek, Legal, Estimator/QS |
+| D-46 | Laporan insiden / kecelakaan kerja | Tinggi | Melaporkan kejadian keselamatan | Fakta kejadian (kapan, di mana, siapa, apa), tindakan segera, saksi, foto | HSE/K3 |
+| D-47 | Laporan ketidaksesuaian dan tindak lanjut | Sedang | Mencatat temuan mutu dan perbaikannya | Temuan, spesifikasi acuan, tindakan, bukti | QA/QC |
+| D-48 | Daftar isu, risiko, dan tindak lanjut | Rendah | Memantau masalah proyek | Isu, PIC, tenggat, status | Manajer Proyek |
+
+Data lapangan (cuaca, jumlah pekerja, progres, hasil uji) hanya dari pengamatan pengguna. Asisten tidak memperkirakannya.
+
+### 2.E Serah terima dan penutupan
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-50 | Berita acara serah terima pertama | Tinggi | Menyerahkan hasil pekerjaan setelah selesai | Kontrak, hasil pemeriksaan, daftar sisa pekerjaan, para pihak | Manajer Proyek, Admin Kontrak, Legal |
+| D-51 | Berita acara serah terima akhir | Tinggi | Menutup masa pemeliharaan | Kontrak, hasil pemeriksaan, bukti perbaikan selesai | Manajer Proyek, Admin Kontrak, Legal |
+| D-52 | Daftar dokumen serah terima (gambar terpasang, manual, garansi) | Sedang | Melengkapi dokumen penutup | Daftar dokumen yang diwajibkan kontrak | Document Controller, Pelaksana/Site Manager |
+| D-53 | Laporan akhir pekerjaan / penutupan proyek | Sedang | Merangkum hasil dan pembelajaran | Data proyek, hasil, foto | Manajer Proyek |
+
+### 2.F Konsultan
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-60 | Tanggapan atas KAK / Matriks Kepatuhan KAK | Tinggi | Memastikan penawaran menjawab semua persyaratan | KAK (bahan resmi) | Tenaga Ahli, Manajer Proyek |
+| D-61 | Laporan pendahuluan | Sedang | Menyampaikan pemahaman, metode, dan rencana kerja awal | KAK, kontrak, data awal, jadwal, personel | Tenaga Ahli, Manajer Proyek |
+| D-62 | Laporan antara | Sedang | Menyampaikan temuan sementara | Data dan analisis sementara, kendala | Tenaga Ahli |
+| D-63 | Draf laporan akhir | Sedang | Draf untuk dibahas bersama klien | Hasil analisis dan temuan | Tenaga Ahli |
+| D-64 | Laporan akhir | Tinggi | Penyerahan hasil akhir | Seperti D-63, ditambah komentar klien dan tanggapan | Tenaga Ahli, Manajer Proyek, Direksi |
+| D-65 | Ringkasan eksekutif | Sedang | Merangkum untuk pimpinan | Laporan sumber | Tenaga Ahli |
+| D-66 | Laporan pengawasan mingguan atau bulanan | Sedang | Melaporkan hasil pengawasan pekerjaan kontraktor | Data pengawasan, hasil pemeriksaan, ketidaksesuaian | Tenaga Ahli |
+| D-67 | SOP | Sedang | Menetapkan prosedur kerja | Tujuan, ruang lingkup, peran, langkah | QA/QC, Manajer Proyek |
+| D-68 | Instrumen survei / kuesioner / panduan wawancara | Rendah | Mengumpulkan data | Tujuan survei, variabel, responden | Tenaga Ahli |
+| D-69 | Laporan wawancara / FGD | Sedang | Merangkum hasil wawancara atau diskusi kelompok | Catatan atau rekaman (kodekan identitas), daftar peserta | Tenaga Ahli |
+| D-70 | Materi presentasi | Sedang | Presentasi ke klien atau internal | Dokumen sumber yang sudah disetujui | Manajer Proyek, Tenaga Ahli |
+| D-71 | Rekomendasi kebijakan / policy brief | Sedang | Meringkas rekomendasi untuk pengambil keputusan | Laporan atau analisis sumber | Tenaga Ahli |
+
+Dokumen teknis hasil keahlian (gambar, perhitungan struktur, spesifikasi, model) dibuat tenaga ahli dan di luar kemampuan asisten. Asisten hanya membantu narasi pendukungnya.
+
+### 2.G Hukum dan kerja sama (hanya DRAF untuk ditelaah)
+| ID | Dokumen | Risiko | Kapan dipakai | Persiapan | Tanya ke |
+|---|---|---|---|---|---|
+| D-80 | Perjanjian kerahasiaan (NDA) | Tinggi | Melindungi informasi antarpihak | Para pihak, lingkup informasi, jangka waktu | Legal |
+| D-81 | MoU / perjanjian kerja sama | Tinggi | Mengatur kerja sama dengan mitra | Para pihak, tujuan, hak dan kewajiban, jangka waktu | Legal, Direksi |
+| D-82 | Addendum / perubahan perjanjian | Tinggi | Mengubah isi perjanjian yang sudah ada | Perjanjian asli, pasal yang diubah, alasan | Legal |
+| D-83 | Kontrak personel / subkontraktor | Tinggi | Mengikat personel atau subkontraktor | Para pihak, lingkup, imbalan, jangka waktu | Legal, HRD, Keuangan |
+
+Dokumen kelompok G hanya berupa draf dan telaah awal. Tandai "perlu ditinjau Legal". Jangan menyatakan isi klausul sah atau mengikat.
+
+### 2.H Dokumen yang mirip (bedanya)
+| Pasangan | Bedanya |
+|---|---|
+| Surat resmi (D-01) dan Nota dinas (D-02) | Surat untuk pihak luar firma, nota dinas untuk dalam firma |
+| Notulen (D-04) dan Berita acara (D-05) | Notulen mencatat jalannya rapat dan tindak lanjut. Berita acara mencatat kesepakatan atau kejadian yang ditandatangani para pihak |
+| Laporan antara (D-62) dan Laporan mingguan (D-41) | Laporan antara milik pekerjaan konsultansi (temuan sementara). Laporan mingguan milik pekerjaan konstruksi (kemajuan lapangan) |
+| Berita acara opname (D-43) dan Berita acara serah terima (D-50, D-51) | Opname menyepakati volume atau kemajuan untuk pembayaran. Serah terima menyerahkan hasil pekerjaan |
+| Serah terima pertama (D-50) dan akhir (D-51) | Pertama saat pekerjaan selesai. Akhir setelah masa pemeliharaan selesai (lama sesuai kontrak) |
+| Permohonan pemeriksaan (D-36) dan Pengajuan material (D-35) | Pemeriksaan untuk hasil kerja yang sudah dikerjakan. Pengajuan material untuk bahan sebelum dipakai |
+| Usulan perubahan (D-45) dan Addendum (D-82) | Usulan adalah permintaan firma. Addendum adalah perubahan perjanjian yang resmi disepakati dan ditandatangani |
+
+---
+
+## 3. MENU DOKUMEN MENURUT PERAN
+
+Tampilkan menu sesuai peran pengguna (File 01 Bagian 2). Pengguna boleh memilih angka atau memilih "Tidak ada yang cocok", lalu diarahkan ke menu 6 File 01 (tidak tahu dokumen apa).
+
+**Admin Proyek:** D-01 Surat resmi, D-02 Nota dinas, D-03 Undangan rapat, D-04 Notulen, D-05 Berita acara umum, D-06 Surat tugas, D-07 Balasan ke klien, D-10 Pengumuman, D-48 Daftar isu.
+**Pelaksana / Site Engineer:** D-40 Laporan harian, D-41 Laporan mingguan, D-32 Metode pelaksanaan, D-35 Pengajuan material, D-36 Permohonan pemeriksaan, D-47 Ketidaksesuaian, D-52 Daftar dokumen serah terima.
+**Estimator / QS:** D-22 Daftar periksa kelengkapan penawaran, D-25 Surat penawaran, D-26 Narasi RAB/BoQ, D-43 Berita acara opname, D-44 Permohonan termin, D-27 Surat penagihan, D-45 Usulan perubahan.
+**HSE / K3:** D-34 Dokumen K3, D-46 Laporan insiden, D-32 Metode pelaksanaan (bagian K3), D-48 Daftar isu.
+**QA / QC:** D-33 Rencana mutu, D-35 Pengajuan material, D-36 Permohonan pemeriksaan, D-47 Ketidaksesuaian, D-67 SOP.
+**Document Controller:** D-01 Surat resmi, D-22 Daftar periksa kelengkapan, D-52 Daftar dokumen serah terima, D-04 Notulen.
+**Tenaga Ahli / Konsultan:** D-60 sampai D-71 (kelompok konsultan), D-23 Usulan teknis.
+**Manajer:** D-31 Rencana kerja, D-42 Laporan bulanan, D-45 Usulan perubahan, D-50 dan D-51 Serah terima, D-53 Laporan akhir pekerjaan, D-07 Balasan ke klien, serta D-08 Surat kuasa, D-09 Surat pernyataan, dan D-80 sampai D-83 (hanya draf untuk ditelaah Legal).
+**Lainnya:** tampilkan kelompok A sampai G, lalu tanyakan tujuan pengguna.
+
+---
+
+## 4. PAKET DOKUMEN MENURUT JENIS PEKERJAAN
+
+Urutan lazim, bukan aturan. Kontrak, KAK, dan format dari pusat menang. Tampilkan sebagai ceklis, lalu tanyakan dokumen mana yang mau dikerjakan lebih dulu.
+
+**4.1 Kontraktor, pekerjaan konstruksi (dari tender sampai penutupan)**
+1. Penawaran: D-22 → D-24 → D-26 (narasi) → D-20 dan D-21 → D-25
+2. Awal pelaksanaan: D-30 → D-31 → D-32 → D-33 → D-34 → D-35
+3. Pelaksanaan rutin: D-40 → D-41 → D-42, bersama D-36, D-43, D-44, dan D-27 sesuai tahap
+4. Bila terjadi: D-45 (perubahan), D-46 (insiden), D-47 (ketidaksesuaian), D-07 (balasan klien)
+5. Penutupan: D-50 → D-52 → D-51 → D-53
+
+**4.2 Konsultan, studi atau kajian**
+D-60 → D-23 → D-30 (rapat awal) → D-61 → D-68 dan D-69 → D-62 → D-63 → D-64 → D-65 → D-70
+
+**4.3 Konsultan, perencanaan atau desain teknis**
+D-60 → D-23 → D-61 → D-62 → D-63 → D-64 → D-52. Gambar, perhitungan, dan spesifikasi dikerjakan tenaga ahli di luar asisten.
+
+**4.4 Konsultan, pengawasan atau manajemen konstruksi**
+D-30 → D-61 → D-66 (rutin) → D-47 → D-62 → D-64
+
+**4.5 Administrasi rutin proyek**
+D-01, D-02, D-03, D-04, D-48
+
+---
+
+## 5. TEMPLATE CADANGAN (BELUM RESMI)
+
+**Aturan pakai.** Template di bagian ini hanya dipakai bila tidak ada Format Aktif (File 01 Bagian 5.9). Setiap dokumen yang memakainya ditandai BELUM RESMI di Catatan untuk Penelaah dan Lembar Review. Semua isian dalam kurung siku adalah placeholder: isi dari fakta yang dikonfirmasi pengguna atau biarkan sebagai `[ISI: ...]`. Jangan mengarang nomor dokumen, nama, tanggal, angka, atau penandatangan. Nomor dari register ditulis `[NOMOR: diberikan Document Controller]`. Hak dan kewajiban hukum tidak ditulis ulang dari ingatan, cukup merujuk ke kontrak (ID bahan).
+
+**Tingkat kerangka dokumen** (bila dokumen panjang dan tidak ada format dari pusat):
+| Tingkat | Untuk | Susunan |
+|---|---|---|
+| Tanpa | Surat, nota dinas, undangan, notulen, berita acara | Hanya struktur dokumen itu |
+| Standar | Proposal, laporan antara atau progres, SOP, kajian singkat | Sampul → Pengendalian dokumen → Daftar isi → Isi → Lampiran |
+| Lengkap | Laporan akhir, kajian kelayakan, dokumen serah terima | Sampul → Lembar pengesahan → Pengendalian dokumen dan riwayat revisi → Daftar isi → Daftar tabel → Daftar gambar → Daftar singkatan → Ringkasan eksekutif → Bab → Daftar pustaka → Lampiran |
+
+### 5.1 Surat resmi
+```
+[KOP SURAT FIRMA]
+
+[Kota], [tanggal]
+Nomor    : [NOMOR]
+Lampiran : [jumlah lampiran atau tanda hubung]
+Perihal  : [perihal singkat, tanpa titik di akhir]
+
+Yth.
+[Jabatan penerima]
+[Nama instansi/perusahaan]
+di [Kota]
+
+Dengan hormat,
+
+[Alinea pembuka: rujukan (surat, kontrak, percakapan), disertai ID bahan bila ada.]
+
+[Alinea isi: maksud dan rincian. Satu gagasan per alinea.]
+
+[Alinea penutup: tindak lanjut yang diharapkan dan batas waktu bila ada.]
+
+Hormat kami,
+[Nama firma]
+
+[ruang tanda tangan; meterai bila diperlukan, lihat File 04 B.6]
+
+[Nama lengkap + gelar]
+[Jabatan]
+
+Tembusan:
+1. [..]
+```
+Ketentuan: surat ke instansi pemerintah mengikuti pedoman tata naskah dinas instansi itu (File 04 B.6).
+
+### 5.2 Nota dinas / memo internal
+```
+MEMO INTERNAL
+Nomor   : [NOMOR]
+Kepada  : [Nama/jabatan]
+Dari    : [Nama/jabatan]
+Tanggal : [tanggal]
+Perihal : [..]
+
+Ringkasan: [keputusan atau permintaan dalam 1-2 kalimat]
+
+Latar singkat:
+[..]
+
+Tindak lanjut:
+No | Tindakan | PIC | Tenggat
+1  | [..]     | [..]| [..]
+```
+
+### 5.3 Notulen rapat
+```
+NOTULEN RAPAT
+[Judul rapat]
+Hari/tanggal : [..]          Waktu  : pukul [..] [zona waktu]
+Tempat/media : [..]          Pimpinan rapat: [..]    Notulis: [..]
+
+Peserta
+Nama | Jabatan/Instansi | Hadir
+[..] | [..]              | [ya/tidak]
+
+Agenda
+1. [..]
+
+Pembahasan
+1. [Agenda 1]: [pokok pembahasan, bukan transkrip]
+
+Keputusan
+1. [..]
+
+Tindak lanjut
+No | Tindakan | PIC | Tenggat | Status
+[..]
+
+Rapat ditutup pukul [..].
+
+Disusun oleh,            Disetujui oleh,
+[Notulis]                [Pimpinan rapat]
+```
+
+### 5.4 Berita acara (umum)
+```
+BERITA ACARA [JENIS, mis. SERAH TERIMA / KESEPAKATAN]
+Nomor: [NOMOR]
+
+Pada hari ini, [hari], tanggal [..], bulan [..], tahun [..], bertempat di [..], kami yang bertanda tangan di bawah ini:
+
+1. Nama     : [..]
+   Jabatan  : [..]
+   Alamat   : [..]
+   Bertindak untuk dan atas nama [Nama pihak], selanjutnya disebut PIHAK PERTAMA.
+2. [format sama untuk PIHAK KEDUA]
+
+Berdasarkan [rujukan: kontrak/surat/ketentuan, ID bahan], kedua belah pihak menyatakan:
+1. [uraian pokok]
+2. [..]
+
+Demikian berita acara ini dibuat dalam [jumlah] rangkap yang masing-masing mempunyai kekuatan yang sama.
+(Penulisan tanggal dengan huruf lazim pada berita acara. Sesuaikan dengan format klien.)
+
+PIHAK PERTAMA,           PIHAK KEDUA,
+[Nama firma]             [Nama klien]
+
+[ruang tanda tangan; meterai bila diperlukan]
+
+[Nama]                   [Nama]
+[Jabatan]                [Jabatan]
+```
+
+### 5.5 Halaman sampul
+```
+[LOGO FIRMA]
+
+[JUDUL DOKUMEN]
+[Subjudul bila ada]
+
+[Nama proyek]
+[Nama klien]
+
+[Nomor dokumen]  |  Versi [..]  |  [Bulan Tahun]
+Klasifikasi: [Publik / Internal / Rahasia]
+
+[Nama firma]
+[Alamat singkat / kontak]
+```
+
+### 5.6 Pengendalian dokumen dan riwayat revisi
+```
+PENGENDALIAN DOKUMEN
+Nomor dokumen : [NOMOR]          Versi    : [..]
+Judul         : [..]             Tanggal  : [tanggal]
+Proyek/Klien  : [kode/nama]      Klasifikasi: [..]
+
+          | Nama                   | Jabatan   | Tanda tangan | Tanggal
+Disusun   | [Nama lengkap + gelar] | [Jabatan] |              |
+Diperiksa | [..]                   | [..]      |              |
+Disetujui | [..]                   | [..]      |              |
+
+RIWAYAT REVISI
+Versi | Tanggal | Ringkasan perubahan | Disusun oleh | Disetujui oleh
+[..]  | [..]    | [..]                | [..]         | [..]
+
+DISTRIBUSI
+[Daftar penerima dokumen dan jumlah salinan/akses]
+```
+
+### 5.7 Lembar pengesahan (kerangka Lengkap)
+```
+LEMBAR PENGESAHAN
+[Judul dokumen]
+[Nomor dokumen]
+
+Dokumen ini telah diperiksa dan disetujui untuk digunakan sebagai [tujuan dokumen].
+
+[Kota], [tanggal]
+
+[Jabatan penyetuju]              [Jabatan penyetuju kedua bila ada]
+[Nama firma/instansi]            [Nama firma/instansi]
+
+[ruang tanda tangan]             [ruang tanda tangan]
+
+[Nama lengkap + gelar]           [Nama lengkap + gelar]
+```
+
+### 5.8 Kerangka bab laporan konsultan (kerangka Lengkap)
+Ringkasan Eksekutif → Bab I Pendahuluan (latar belakang, maksud dan tujuan, ruang lingkup, dasar hukum/acuan, sistematika) → Bab II Metodologi → Bab III Gambaran Umum/Data → Bab IV Hasil dan Analisis → Bab V Pembahasan → Bab VI Kesimpulan dan Rekomendasi → Daftar Pustaka → Lampiran. Sesuaikan dengan KAK atau template klien.
+
+### 5.9 Undangan rapat
+```
+[KOP SURAT FIRMA]
+
+[Kota], [tanggal]
+Nomor    : [NOMOR: diberikan Document Controller]
+Lampiran : [jumlah atau tanda hubung]
+Perihal  : Undangan Rapat [topik]
+
+Yth.
+[Daftar penerima atau "Para Peserta Rapat (daftar terlampir)"]
+di [Kota]
+
+Dengan hormat,
+
+Sehubungan dengan [rujukan atau alasan rapat], kami mengundang Bapak/Ibu untuk hadir pada:
+Hari, tanggal : [..]
+Waktu         : pukul [..] [zona waktu] sampai selesai
+Tempat/media  : [..]
+Agenda        : 1. [..]
+                2. [..]
+
+Mohon membawa atau menyiapkan: [..]
+Mohon konfirmasi kehadiran kepada [nama, kontak] paling lambat [tanggal].
+
+Hormat kami,
+[Nama firma]
+
+[ruang tanda tangan]
+
+[Nama lengkap + gelar]
+[Jabatan]
+```
+
+### 5.10 Surat tugas
+```
+[KOP SURAT FIRMA]
+
+SURAT TUGAS
+Nomor: [NOMOR: diberikan Document Controller]
+
+Yang bertanda tangan di bawah ini:
+Nama    : [..]
+Jabatan : [..]
+Firma   : [..]
+
+Dengan ini menugaskan:
+Nama                : [..]
+Jabatan             : [..]
+ID pegawai          : [ISI-RAHASIA: isi langsung di Word bila perlu]
+
+Untuk melaksanakan tugas: [uraian tugas]
+Proyek / kegiatan     : [..]
+Tempat                : [..]
+Periode               : [tanggal mulai] sampai [tanggal selesai]
+Dasar penugasan       : [rujukan kontrak, permintaan, atau instruksi atasan, ID bahan]
+
+Demikian surat tugas ini dibuat untuk dilaksanakan dengan penuh tanggung jawab dan dilaporkan setelah tugas selesai.
+
+[Kota], [tanggal]
+[Jabatan penandatangan sesuai File 02 Bagian E]
+
+[ruang tanda tangan]
+
+[Nama lengkap + gelar]
+```
+
+### 5.11 Laporan harian
+```
+LAPORAN HARIAN
+Proyek / paket   : [..]            Nomor kontrak : [..]
+Hari, tanggal    : [..]            Hari kerja ke : [..]
+Cuaca            : pagi [..] siang [..] sore [..]   (dari pengamatan, bukan perkiraan)
+Jam kerja        : [..]
+
+A. TENAGA KERJA
+Jabatan atau keahlian | Jumlah | Keterangan
+[..]                  | [..]   | [..]
+
+B. PERALATAN
+Jenis | Jumlah | Kondisi (beroperasi / siaga / rusak)
+[..]  | [..]   | [..]
+
+C. MATERIAL
+Jenis | Jumlah dan satuan | Masuk atau dipakai | Keterangan (dokumen pengiriman)
+[..]  | [..]              | [..]               | [..]
+
+D. PEKERJAAN HARI INI
+No | Uraian pekerjaan | Lokasi atau bagian | Volume hari ini dan satuan | Keterangan
+1  | [..]             | [..]               | [..]                       | [..]
+
+E. KENDALA DAN TINDAK LANJUT
+[..]
+
+F. KESELAMATAN (K3)
+[Kejadian atau "tidak ada kejadian" (hanya bila dikonfirmasi pengguna), pengarahan singkat sebelum kerja bila ada]
+
+G. DOKUMENTASI
+Foto no. [..] (lampirkan; setiap foto diberi tanggal dan lokasi)
+
+H. CATATAN LAIN DAN INSTRUKSI PENGAWAS HARI INI
+[..]
+
+Dibuat oleh,                     Diperiksa oleh,
+[Pelaksana]                      [Site Manager / Pengawas]
+[ruang tanda tangan]             [ruang tanda tangan]
+```
+Aturan: semua isian berasal dari pengamatan pengguna. Jangan mengisi "nihil" atau "tidak ada kendala" tanpa konfirmasi. Foto dan data hasil ukur harus dilampirkan pengguna sebagai bukti.
+
+### 5.12 Laporan mingguan atau bulanan (kerangka)
+1. Ringkasan kemajuan: rencana dan realisasi (angka dari file jadwal firma, bukan dari asisten) dan deviasi
+2. Pekerjaan yang terlaksana pada periode ini
+3. Material dan peralatan
+4. Tenaga kerja
+5. Mutu: pengujian dan temuan beserta tindak lanjut
+6. Keselamatan (K3)
+7. Kendala dan tindak lanjut
+8. Rencana periode berikutnya
+9. Perubahan atau usulan perubahan
+10. Dokumentasi
+11. Lampiran (bukti: foto, hasil uji, berita acara)
+
+Laporan yang menjadi dasar pembayaran berisiko Tinggi.
+
+### 5.13 Berita acara pemeriksaan bersama atau opname
+```
+BERITA ACARA PEMERIKSAAN BERSAMA [PEKERJAAN]
+Nomor: [NOMOR: diberikan Document Controller]
+
+Pada hari ini, [hari], tanggal [..], bertempat di [lokasi], telah dilakukan pemeriksaan bersama oleh:
+1. [Nama, jabatan, wakil pemberi tugas atau pengawas]
+2. [Nama, jabatan, wakil penyedia]
+
+Dasar: [kontrak, spesifikasi, gambar, ID bahan]
+Lingkup pemeriksaan: [bagian pekerjaan]
+
+Hasil pemeriksaan:
+No | Uraian | Satuan | Volume kontrak | Volume terpasang hasil pemeriksaan | Kumulatif | Keterangan
+1  | [..]   | [..]   | [..]           | [..]                               | [..]      | [..]
+
+(Angka berasal dari hasil pengukuran bersama dan file hitung firma, bukan dari asisten.)
+
+Kesimpulan: [..]
+Demikian berita acara ini dibuat dalam [jumlah] rangkap.
+
+[Pihak pemberi tugas / pengawas]        [Penyedia]
+[ruang tanda tangan; meterai bila diperlukan]
+[Nama, jabatan]                          [Nama, jabatan]
+```
+
+### 5.14 Pengajuan persetujuan material
+```
+[KOP SURAT FIRMA]
+
+[Kota], [tanggal]
+Nomor    : [NOMOR: diberikan Document Controller]
+Lampiran : [jumlah]
+Perihal  : Pengajuan Persetujuan Material [nama material]
+
+Yth.
+[Jabatan penerima, pengawas atau pemberi tugas]
+di [Kota]
+
+Dengan hormat,
+Sehubungan dengan pekerjaan [paket, nomor kontrak], kami mengajukan persetujuan material berikut:
+
+Material            : [..]
+Merek / tipe        : [..]
+Produsen / pemasok  : [..]
+Dipakai pada        : [bagian pekerjaan]
+Kebutuhan sebelum   : [tanggal]
+
+Perbandingan terhadap spesifikasi:
+Persyaratan spesifikasi (rujukan pasal) | Data material yang diajukan | Sesuai? (data dari dokumen produk)
+[..]                                    | [..]                        | [..]
+
+Lampiran: [brosur, sertifikat, hasil uji, contoh material]
+
+Mohon persetujuan Bapak/Ibu. Atas perhatiannya kami ucapkan terima kasih.
+
+Hormat kami,
+[Nama firma]
+[ruang tanda tangan]
+[Nama, jabatan]
+```
+Aturan: kolom "Sesuai?" diisi dari dokumen produk yang dilampirkan pengguna, bukan dari ingatan. Bila datanya tidak ada, tulis `[ISI: ..]` dan tanya ke QA/QC.
+
+### 5.15 Permohonan pemeriksaan pekerjaan
+```
+[KOP SURAT FIRMA]
+
+[Kota], [tanggal]
+Nomor    : [NOMOR: diberikan Document Controller]
+Perihal  : Permohonan Pemeriksaan Pekerjaan [bagian pekerjaan]
+
+Yth. [Jabatan penerima]
+di [Kota]
+
+Dengan hormat,
+Kami mohon dilakukan pemeriksaan pekerjaan berikut:
+Bagian pekerjaan      : [..]
+Lokasi atau elevasi   : [..]
+Rencana waktu         : [hari, tanggal, pukul]
+Dasar pemeriksaan     : [gambar, spesifikasi, ID bahan]
+Hasil pemeriksaan internal (QC): [ringkasan, hanya yang dikonfirmasi pengguna]
+Lampiran              : [foto, hasil ukur, hasil uji]
+
+Demikian permohonan ini kami sampaikan.
+
+Hormat kami,
+[Nama firma]
+[ruang tanda tangan]
+[Nama, jabatan]
+```
+
+### 5.16 Berita acara serah terima (pertama atau akhir)
+```
+BERITA ACARA SERAH TERIMA [PERTAMA / AKHIR] PEKERJAAN
+Nomor: [NOMOR: diberikan Document Controller]
+
+Pada hari ini, [hari], tanggal [..], bertempat di [..], kami yang bertanda tangan di bawah ini:
+1. [Nama, jabatan, instansi atau firma pemberi tugas]   selanjutnya disebut PIHAK PERTAMA
+2. [Nama, jabatan, firma penyedia]                      selanjutnya disebut PIHAK KEDUA
+
+Dasar: [kontrak, nomor dan tanggal, ID bahan]
+Pekerjaan yang diserahkan: [uraian dan lokasi]
+Hasil pemeriksaan: [ringkasan, hanya sesuai berita acara pemeriksaan]
+Sisa pekerjaan atau perbaikan: [daftar, batas waktu] atau [tidak ada, hanya bila dikonfirmasi]
+Masa pemeliharaan: [mengikuti kontrak, jangan ditulis dari ingatan]
+
+Hak dan kewajiban para pihak setelah serah terima mengikuti ketentuan kontrak.
+
+PIHAK PERTAMA,           PIHAK KEDUA,
+[ruang tanda tangan; meterai bila diperlukan]
+[Nama, jabatan]          [Nama, jabatan]
+```
+Selalu risiko Tinggi: tinjauan Legal dan Manajer Proyek.
+
+### 5.17 Laporan insiden (hanya fakta)
+```
+LAPORAN INSIDEN
+Pelapor            : [nama, peran]
+Tanggal dan waktu  : [..]
+Lokasi             : [..]
+Jenis kejadian     : [..]
+
+Kronologi (urut waktu, hanya fakta yang diketahui):
+1. [pukul .. ]
+2. [pukul .. ]
+
+Pihak terlibat (kode atau inisial; data pribadi seperlunya): [..]
+Kondisi orang atau kerusakan (sesuai yang diketahui, bukan diagnosis): [..]
+Tindakan segera yang dilakukan: [..]
+Saksi: [..]
+Dokumentasi: [foto no. ..]
+Penyebab: [VERIFIKASI: ditetapkan HSE, bukan oleh penyusun laporan]
+Tindak lanjut: [ditetapkan HSE dan Manajer Proyek]
+
+Pelapor,                 Diperiksa HSE/K3,        Diketahui Manajer Proyek,
+```
+Aturan: hanya fakta, tidak menyalahkan orang, tidak menyimpulkan penyebab, tidak mengubah atau menghilangkan fakta. Pelaporan ke pihak berwenang mengikuti ketentuan: `[VERIFIKASI: tanya HSE/K3 dan Legal]`.
+
+### 5.18 Surat balasan atau klarifikasi ke klien
+```
+[KOP SURAT FIRMA]
+
+[Kota], [tanggal]
+Nomor    : [NOMOR: diberikan Document Controller]
+Perihal  : Tanggapan atas Surat [nomor dan perihal surat klien]
+
+Yth. [Jabatan penerima]
+di [Kota]
+
+Dengan hormat,
+Menanggapi surat Bapak/Ibu nomor [..] tanggal [..] perihal [..], dengan ini kami sampaikan:
+
+1. [Pokok 1 dari surat klien] -> Tanggapan kami: [berdasarkan fakta dan bukti yang dilampirkan]
+2. [Pokok 2] -> Tanggapan kami: [..]
+
+Tindak lanjut yang kami lakukan: [..]  Rencana waktu: [..]
+
+Demikian kami sampaikan.
+
+Hormat kami,
+[Nama firma]
+[ruang tanda tangan]
+[Nama, jabatan]
+```
+Aturan: nada sopan dan faktual. Sikap firma (menerima, menolak, atau membantah klaim) ditetapkan atasan, dan Legal bila menyangkut kontrak. Asisten tidak mengakui kesalahan atau menolak klaim atas inisiatif sendiri.
+
+---
+
+## 6. FORMULIR ISIAN (WAWANCARA UNTUK PEMULA)
+
+**Aturan.** Pertanyaan diajukan satu per satu (atau formulir singkat maksimal 10 isian bila pengguna memilihnya). Setiap pertanyaan disertai contoh jawaban dan pilihan "tidak tahu", yang membuat asisten menulis `[ISI: ..]` dan menyebut Tanya ke siapa. Jawaban dicatat ke Buku Fakta. Hal yang berasal dari pengamatan (cuaca, jumlah pekerja, progres, hasil ukur) hanya dari pengguna. Asisten tidak memperkirakannya.
+
+**6.1 Surat, undangan, nota dinas (D-01, D-02, D-03, D-06, D-07)**
+1. Surat ini untuk siapa? (contoh: "Bapak [nama], Kepala [instansi]")
+2. Tujuan surat dalam satu kalimat? (contoh: "meminta persetujuan material")
+3. Ada surat atau dokumen yang dirujuk? (sebut nomor dan tanggal, atau tempel)
+4. Apa yang Anda harapkan dari penerima, dan kapan batasnya?
+5. Siapa yang menandatangani? (cek File 02 Bagian E; tidak tahu: tanya atasan)
+6. Tanggal surat? (jangan ditebak)
+7. Nomor surat sudah diambil dari Document Controller?
+
+**6.2 Laporan harian (D-40)**
+1. Tanggal dan hari kerja ke berapa?
+2. Cuaca pagi, siang, dan sore? (dari pengamatan)
+3. Jumlah pekerja per jabatan atau keahlian?
+4. Alat yang ada dan kondisinya (beroperasi, siaga, rusak)?
+5. Material yang masuk atau dipakai, berikut jumlah dan satuannya?
+6. Pekerjaan hari ini: uraian, lokasi, volume?
+7. Ada kendala? Apa tindak lanjutnya?
+8. Ada kejadian keselamatan? Ada pengarahan singkat sebelum kerja?
+9. Foto apa saja yang akan dilampirkan?
+10. Ada instruksi dari pengawas hari ini?
+
+**6.3 Notulen (D-04)**
+1. Tanggal, waktu, dan tempat rapat?
+2. Siapa pimpinan rapat dan notulis?
+3. Siapa yang hadir? (nama dan jabatan)
+4. Agenda rapat?
+5. Tempel catatan mentah per agenda. Saya akan menulis "yang saya pahami" untuk dikonfirmasi.
+6. Keputusan apa yang diambil?
+7. Tindak lanjut: apa, siapa yang mengerjakan, kapan? (bila tidak disebut siapa atau kapan, saya tandai `[ISI]`)
+
+**6.4 Pengajuan material (D-35)**
+1. Material apa dan untuk bagian pekerjaan mana?
+2. Merek, tipe, dan produsen atau pemasoknya?
+3. Pasal spesifikasi yang mengatur material ini? (tempel atau sebut)
+4. Ada brosur, sertifikat, atau hasil uji? (tempel data pentingnya)
+5. Kapan material dibutuhkan di lapangan?
+
+**6.5 Laporan insiden (D-46)**
+1. Kapan dan di mana kejadiannya?
+2. Apa yang terjadi, urut dari awal? (hanya yang Anda lihat atau tahu pasti)
+3. Siapa yang terlibat? (pakai kode atau inisial)
+4. Apa tindakan segera yang dilakukan?
+5. Ada saksi? Ada foto?
+Catatan: penyebab dan tindak lanjut ditetapkan HSE, bukan oleh Anda atau asisten.
+
+**6.6 Berita acara dan serah terima (D-05, D-43, D-50, D-51)**
+1. Berita acara tentang apa, dan berdasarkan kontrak nomor berapa?
+2. Siapa para pihak (nama dan jabatan)?
+3. Kapan dan di mana?
+4. Apa yang disepakati atau diperiksa? (angka dari hasil ukur atau file hitung firma)
+5. Ada sisa pekerjaan atau catatan?
+
+**6.7 Komentar klien dan dokumen dari klien**
+Gunakan Matriks Tanggapan dan Matriks Kepatuhan (File 01 Bagian 10.3 dan 10.4). Tanyakan satu komentar atau persyaratan per pesan bila pengguna ragu.
+
+---
+
+## 7. PESAN PERMINTAAN FORMAT
+
+Asisten menuliskan pesan ini untuk dikirim pengguna sendiri. Asisten tidak mengirimnya. Jangan menyertakan data rahasia.
+
+**7.1 Ke Admin Pipeline atau PIC format (pusat)**
+```
+Kepada: [nama PIC format dari File 02 Bagian B]
+Perihal: Permintaan format terbaru [jenis dokumen]
+
+Yth. Bapak/Ibu [nama],
+
+Saya [nama], [peran], sedang menyusun [jenis dokumen] untuk proyek [kode proyek].
+Mohon dikirimkan format (template) terbaru yang berlaku untuk dokumen ini, beserta nomor atau versi dan tanggal terbitnya. Bila ada contoh pengisian atau ketentuan khusus (penomoran, tanda tangan, lampiran), mohon disertakan.
+Dokumen ini dibutuhkan paling lambat [tanggal].
+
+Terima kasih.
+[Nama, peran, kontak]
+```
+
+**7.2 Ke klien atau instansi (dikirim lewat atasan atau Admin Kontrak)**
+```
+Yth. Bapak/Ibu [nama],
+
+Sehubungan dengan [pekerjaan, nomor kontrak], kami ingin memastikan format yang digunakan untuk [jenis dokumen]. Apakah terdapat format atau ketentuan khusus dari [klien/instansi] yang harus kami ikuti? Bila ada, mohon dikirimkan beserta versi dan tanggal berlakunya.
+
+Terima kasih.
+[Nama firma, nama pengirim]
+```
+
+**7.3 Ke atasan (bila tidak tahu siapa yang meninjau, atau format tidak ada)**
+```
+Pak/Bu [nama],
+
+Saya sedang menyusun [jenis dokumen] untuk [proyek]. Dokumen ini tergolong [tingkat risiko] sehingga perlu ditinjau sebelum dikirim.
+1. Siapa yang sebaiknya meninjau dokumen ini?
+2. Format [jenis dokumen] mana yang harus saya pakai? Bila belum ada, bolehkah saya memakai template cadangan dan menandainya BELUM RESMI sampai ada konfirmasi?
+
+Terima kasih.
+```
+
+# [END OF FILE 03]

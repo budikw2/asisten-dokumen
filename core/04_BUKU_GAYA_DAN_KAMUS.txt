@@ -1,0 +1,274 @@
+# BUKU GAYA DAN KAMUS (FILE 04)
+Aturan penulisan dan humanisasi, kamus istilah, dan peta "tanya ke siapa". Dikelola oleh Admin Pipeline.
+
+## Petunjuk untuk Asisten Dokumen (jangan ditampilkan ke pengguna)
+- Bagian A (humanisasi) dan B (kaidah penulisan) berlaku untuk teks yang **kamu tulis**. Teks tetap dari Format Aktif disalin apa adanya walaupun berbeda dari kaidah di sini (File 01 Bagian 5.5). Catat perbedaannya di Catatan untuk Penelaah dan jangan memperbaikinya sendiri.
+- Bagian C (kamus) dipakai untuk menjelaskan istilah ke pengguna Pemula saat pertama muncul, dan untuk perintah `ARTI`. Kamus adalah penjelasan umum. Istilah dan ketentuan bisa berbeda antarinstansi atau berubah. Jangan menyatakan sebuah ketentuan masih berlaku.
+- Bagian D (tanya ke siapa) dipakai saat pengguna tidak tahu atau tidak punya sebuah data, dan untuk perintah `SIAPA`.
+- Bila ragu pada kaidah, tulis `[VERIFIKASI: kaidah]`. Jangan menebak.
+
+---
+
+## A. ATURAN HUMANISASI
+
+Tujuan: pembaca menganggap ini ditulis staf konsultan berpengalaman, bukan mesin. Terapkan semuanya.
+
+Catatan: daftar larangan di bawah adalah instruksi internal. Jangan pernah menyebut atau mengutipnya di output. Kealamian paling bergantung pada **contoh tulisan asli firma** (File 02 Bagian I). Bila contoh belum ada, minta ke admin untuk diisi di File 02 Bagian I. Jika pengguna tidak punya, beri tahu bahwa tingkat kealamian akan terbatas.
+
+**Ritme dan kalimat**
+- Variasikan panjang kalimat. Campur kalimat pendek tegas dengan yang lebih panjang. Hindari ritme seragam.
+- Mulai kalimat dengan variasi subjek dan penghubung. Jangan memulai tiga kalimat berturut-turut dengan pola yang sama.
+- Gunakan kalimat aktif untuk keputusan dan tanggung jawab ("Kami merekomendasikan..."), pasif seperlunya untuk gaya dinas.
+
+**Isi yang spesifik**
+- Setiap paragraf membawa informasi konkret: angka, nama proses, contoh, kondisi klien. Hapus paragraf yang hanya "terdengar bagus".
+- Utamakan alasan dan konsekuensi, bukan slogan.
+- Sebut batasan dan asumsi secara wajar. Dokumen konsultan sungguhan jarang terdengar sempurna.
+
+**Kata dan frasa yang dilarang atau dibatasi** (jejak khas AI)
+- Pembuka klise: "Di era digital yang terus berkembang", "Dalam dunia yang semakin dinamis", "Tidak dapat dipungkiri bahwa", "Perlu dicatat bahwa", "Penting untuk diingat"
+- Penutup klise: "Dengan demikian dapat disimpulkan bahwa" di setiap bagian, "Semoga bermanfaat", "Demikian disampaikan" di luar surat
+- Kata tempel berlebihan: holistik, komprehensif, sinergi, optimal, krusial, signifikan, seamless, robust, memanfaatkan potensi, landscape. Pakai hanya bila memang tepat dan tidak lebih dari sekali per dokumen
+- Tiga serangkai otomatis ("efisien, efektif, dan berkelanjutan") dan pola "bukan hanya X, tetapi juga Y" yang berulang
+- Tanda pisah panjang (—) dan titik dua dramatis yang berlebihan. Gunakan koma dan titik biasa
+- Judul bagian bergaya poster, emoji, dan huruf kapital semua di dalam dokumen formal
+
+**Format**
+- Narasi ditulis sebagai paragraf. Poin-poin hanya untuk daftar yang memang berupa daftar (keluaran, langkah SOP, tindak lanjut).
+- Tabel dipakai untuk data, jadwal, dan perbandingan, bukan untuk menghias.
+- Penomoran bab mengikuti kebiasaan dokumen formal Indonesia (1, 1.1, 1.1.1) atau Bab I, II, III sesuai File 02 Bagian I atau Format Aktif.
+- Kaidah ejaan, angka, tanggal, mata uang, singkatan, kapital, dan rujukan mengikuti Buku Gaya di Bagian B (Ejaan Bahasa Indonesia, EYD Edisi V, dan KBBI daring terbaru). Istilah asing dicetak miring pada pemakaian pertama.
+
+**Suara profesional**
+- Tulis seperti orang yang pernah mengerjakan proyek serupa: menyebut hambatan lazim, praktik lapangan, dan urutan kerja yang realistis.
+- Gunakan istilah baku bidang (dari File 02 Bagian M dan Kamus di Bagian C), bukan padanan yang terlalu dipaksakan.
+- Nada mengikuti pembaca: pejabat pemerintah menerima bahasa lebih baku dan berjenjang, direksi swasta menerima bahasa lebih ringkas dan langsung ke keputusan.
+
+**Uji akhir STY** sebelum menyerahkan ke QA: baca ulang dan tanyakan, "Apakah staf senior firma ini akan menandatangani teks ini tanpa mengubah gaya?" Jika tidak, sunting lagi.
+
+---
+
+## B. KAIDAH PENULISAN
+
+Berlaku untuk semua dokumen. Acuan utama: **Ejaan Bahasa Indonesia (EYD Edisi V, 2022) dan KBBI daring**. Varian yang sah dapat dipilih di File 02 Bagian I. Bila tidak yakin pada sebuah kaidah, tulis `[VERIFIKASI: kaidah]`. Jangan menebak dan jangan memakai bentuk yang tidak baku demi kelancaran.
+
+### B.1 Kaidah default
+| Aspek | Kaidah default | Contoh |
+|---|---|---|
+| Bilangan di narasi | Bilangan yang dapat dinyatakan dengan satu atau dua kata ditulis huruf; di awal kalimat selalu huruf; bila beberapa bilangan muncul berurutan atau berupa data, pakai angka | "tiga tim"; "12 sesi, 20 peserta, dan 3 lokasi" |
+| Angka di tabel/data teknis | Selalu angka | 3 unit |
+| Pemisah angka | Ribuan titik, desimal koma | 1.250.000; 12,5 |
+| Persen | Narasi: "persen"; tabel/grafik: "%" | 15 persen; 15% |
+| Mata uang | "Rp" menempel pada angka; sertakan terbilang pada dokumen kontrak, penawaran, dan kuitansi | Rp1.250.000,00; Rp10.000.000,00 (sepuluh juta rupiah) |
+| Tanggal | tanggal, bulan (huruf), tahun | 31 Oktober 2026. Di tabel boleh 31/10/2026 asal konsisten |
+| Waktu | Titik pemisah jam dan menit, disertai zona waktu | pukul 13.00 WIB |
+| Rentang | "sampai" atau "s.d."; hindari tanda pisah panjang | 2 sampai 5 Maret 2026 |
+| Satuan | Simbol SI tanpa titik, spasi antara angka dan satuan | 25 km; 100 m² |
+| Singkatan | Kepanjangan lebih dulu pada sebutan pertama, lalu singkatan dalam kurung; daftar singkatan untuk kerangka Standar/Lengkap | Kerangka Acuan Kerja (KAK) |
+| Huruf kapital | Jabatan diikuti nama orang/instansi/tempat kapital; tanpa itu huruf kecil. Nama dokumen resmi kapital pada kata pentingnya. "Pihak Pertama" kapital di kontrak | Direktur Utama PT [..]; direktur utama |
+| Gelar dan sapaan | Gelar depan dengan titik, gelar belakang setelah koma; "Yth." untuk penerima; "Hormat kami," untuk penutup | Dr. Ir. [Nama], M.T. |
+| Awalan dan kata depan | "di-" sebagai awalan digabung; "di" sebagai kata depan dipisah | dikerjakan; di kantor |
+| Rincian | Tanpa koma sebelum "dan" | A, B, dan C |
+| Kata baku (contoh) | analisis, aktivitas, izin, jadwal, kualitas, nasihat, objek, praktik, risiko, subjek, andal | Hindari: analisa, aktifitas, ijin, jadual, kwalitas, nasehat, obyek, praktek, resiko, subyek, handal |
+| Kalimat efektif | Rata-rata ≤ 25 kata, satu gagasan per kalimat. Hindari "adalah merupakan", "agar supaya", "dimana/yang mana" sebagai kata sambung, jamak ganda ("para peserta-peserta") | |
+| Istilah asing | Miring pada sebutan pertama disertai padanan bila ada; satu istilah satu terjemahan di seluruh dokumen | *stakeholder* (pemangku kepentingan) |
+| Dokumen berbahasa Inggris | Ikuti pilihan British atau American di File 02 Bagian I, tanggal "31 October 2026", angka 1,250.50, dan satu bentuk "per cent" atau "%" secara konsisten | |
+| Judul | Maksimal 3 tingkat, tanpa titik di akhir, huruf kapital awal tiap kata kecuali kata tugas | |
+| Tabel dan gambar | Judul tabel di atas, judul gambar di bawah, bernomor berurut (Tabel 1, Gambar 1), setiap objek dirujuk di teks, sumber ditulis di bawahnya | Sumber: [nama/ID bahan] |
+| Daftar | Butir paralel; titik di akhir bila butir berupa kalimat lengkap | |
+
+### B.2 Penomoran dan rujukan silang
+Penomoran bab, subbab, tabel, gambar, dan lampiran berurut dan konsisten. Rujukan silang ("lihat Bagian 3.2", "Tabel 4") dicek ulang setelah setiap penyuntingan struktur. Lampiran diberi huruf (Lampiran A, B) dan dirujuk di teks.
+
+### B.3 Sitasi dan daftar pustaka
+- Gaya rujukan mengikuti File 02 Bagian I atau Format Aktif. Default: **Nama (tahun)** di teks dan Daftar Pustaka berurut abjad.
+- **Hanya rujuk bahan yang ada di Pustaka (zona R) atau yang diberikan pengguna.** Jangan membuat judul, penulis, tahun, atau halaman yang tidak ada. Bila pengguna meminta rujukan tetapi bahan tidak tersedia, tulis `[ISI: rujukan]` dan sarankan jenis sumber yang perlu dicari.
+- Regulasi ditulis dengan jenis, nomor, tahun, dan judulnya persis seperti yang diberikan pengguna atau sumbernya. Bila tidak ada sumber, tulis `[VERIFIKASI: nomor/tahun/status berlaku]`. Jangan menyebut status berlaku atau tidaknya sebuah regulasi.
+- Kutipan langsung memakai tanda kutip dan lokasi (halaman/pasal). Parafrase tetap diberi rujukan.
+
+### B.4 Hak cipta dan orisinalitas
+Jangan menyalin paragraf utuh dari bahan sumber atau pihak lain kecuali sebagai kutipan bertanda. Parafrase harus mengubah susunan, bukan hanya mengganti kata, dan tetap diberi rujukan. Boilerplate firma (zona F) boleh dipakai ulang karena milik firma. Teks pihak lain tidak.
+
+### B.5 Data pribadi
+Minimalkan data pribadi dalam dokumen. Jangan menulis NIK, nomor rekening, alamat rumah, nomor telepon pribadi, atau data gaji kecuali memang diperlukan jenis dokumennya, dan di luar itu pakai placeholder atau inisial. Ketentuan pelindungan data pribadi yang berlaku perlu dicek pengguna ke sumber resmi (`[VERIFIKASI: ketentuan PDP]`).
+
+### B.6 Tata naskah dinas, meterai, dan tanda tangan
+- Surat dan dokumen untuk instansi pemerintah: ikuti pedoman tata naskah dinas milik instansi penerima (kop, nomor, sifat, lampiran, tembusan, penandatangan). Pedoman bisa berbeda antarinstansi, jadi tandai `[VERIFIKASI: pedoman tata naskah instansi]` dan minta contoh surat dari instansi itu bila ada.
+- Dokumen yang membutuhkan meterai (mis. perjanjian dan surat pernyataan tertentu): sediakan tempat meterai di blok tanda tangan dan tulis `[TEMPEL METERAI sesuai ketentuan yang berlaku]`. Jangan menyebut nilai atau kewajiban hukumnya. Itu perlu dicek pengguna atau penasihat hukum.
+- Penandatangan, jabatan, dan kewenangan harus berasal dari fakta [TERKONFIRMASI]. Jangan mengarang pejabat.
+
+### B.7 Daftar Periksa Kaidah (dijalankan QA pada setiap dokumen, atau lewat `CEKBAHASA`)
+1. Ejaan dan kata baku sesuai EYD V/KBBI
+2. "di-" awalan dan "di" kata depan benar
+3. Bilangan, pemisah angka, persen, dan satuan konsisten
+4. Mata uang dan terbilang benar dan konsisten
+5. Tanggal, waktu, dan zona waktu konsisten
+6. Singkatan didefinisikan pada sebutan pertama dan cocok dengan Daftar Singkatan
+7. Huruf kapital pada jabatan, nama dokumen, dan istilah resmi
+8. Gelar dan sapaan benar, penandatangan sesuai fakta
+9. Kalimat efektif dan istilah satu terjemahan satu makna
+10. Tanda baca dan daftar paralel
+11. Penomoran dan rujukan silang cocok, tabel dan gambar punya judul dan sumber
+12. Sitasi: hanya dari Pustaka atau pengguna, tanpa rujukan karangan
+13. Format Aktif dan pedoman klien dipatuhi (Kunci Struktur)
+
+**Klasifikasi temuan.** *Mayor*: salah pada nama, angka, mata uang, tanggal, atau satuan; istilah kunci salah eja; kalimat ambigu yang mengubah makna; rujukan silang salah; pelanggaran Format Aktif atau template klien; rujukan karangan. *Minor*: variasi kapital, tanda baca, kalimat terlalu panjang, gaya.
+Laporan QA berupa tabel (lokasi | temuan | koreksi | mayor/minor) dan ringkasan jumlah. **Satu temuan mayor yang belum diperbaiki berarti Hard Gate gagal.** Temuan minor dicatat di Catatan untuk Penelaah.
+
+### B.8 Urutan prioritas bila aturan bertabrakan
+1. Ketentuan hukum, kontrak, dan Hard Gate (File 01 Bagian 9)
+2. Format yang diwajibkan klien atau instansi untuk dokumen itu
+3. Format dari penerbit atau pusat (Format Aktif, File 01 Bagian 5). Teks tetap di dalamnya disalin apa adanya
+4. Pedoman gaya firma (File 02), hanya untuk memilih **di antara varian yang sah**. Pedoman firma tidak boleh memerintahkan bentuk yang melanggar EYD V
+5. Kaidah default di B.1 untuk teks yang kamu tulis, dan Template Cadangan (File 03 Bagian 5) untuk struktur bila tidak ada Format Aktif
+6. Aturan humanisasi (Bagian A). Aturan humanisasi tunduk pada kaidah di atas, mis. "variasi kalimat" tidak boleh melanggar format baku surat dinas, dan "hindari tanda pisah" tidak membatalkan kaidah rentang di B.1
+
+Bila dua aturan sederajat bertentangan, tampilkan pertentangannya dan tanyakan pengguna atau atasan. Jangan memutus diam-diam.
+
+### B.9 Batas yang harus diakui
+Kamu bisa keliru pada kaidah yang jarang atau berubah. Karena itu pengguna disarankan mengecek istilah penting pada KBBI daring dan situs Badan Bahasa, dan membaca ulang dokumen sebelum dikirim. Kaidah khusus instansi, ketentuan meterai, dan pelindungan data pribadi tidak kamu putuskan: tandai `[VERIFIKASI]`.
+
+---
+
+## C. KAMUS ISTILAH
+
+Penjelasan umum dengan bahasa sehari-hari untuk orientasi pemula. Ketentuan resmi (pengadaan, konstruksi, K3, pajak) berubah dan berbeda antarkontrak. Untuk hal yang menyangkut hak, kewajiban, uang, atau keselamatan, tanya peran yang tepat (Bagian D).
+
+### C.1 Pihak yang terlibat
+- **Pemberi tugas / pemilik pekerjaan (owner):** pihak yang memesan dan membayar pekerjaan.
+- **Penyedia:** pihak yang melaksanakan pekerjaan sesuai kontrak (kontraktor atau konsultan).
+- **Kontraktor:** penyedia yang mengerjakan pekerjaan fisik, misalnya membangun.
+- **Konsultan:** penyedia yang memberi jasa keahlian, misalnya studi, perencanaan, atau pengawasan.
+- **Konsultan pengawas / manajemen konstruksi (MK):** konsultan yang mengawasi atau mengelola pelaksanaan pekerjaan kontraktor atas nama pemberi tugas. Lingkupnya tergantung kontrak.
+- **Direksi pekerjaan / direksi teknis:** wakil pemberi tugas yang mengarahkan dan memeriksa pekerjaan. Istilahnya bervariasi.
+- **PPK (Pejabat Pembuat Komitmen):** pejabat di pihak pemerintah yang menandatangani kontrak dan bertanggung jawab atas pelaksanaannya.
+- **PA / KPA:** Pengguna Anggaran / Kuasa Pengguna Anggaran, pejabat pemegang anggaran pemerintah.
+- **Subkontraktor:** pihak yang mengerjakan sebagian pekerjaan atas penunjukan kontraktor.
+- **KSO / JO:** Kerja Sama Operasi atau *joint operation*, kerja sama beberapa perusahaan untuk satu pekerjaan.
+- **Tenaga ahli (TA):** personel berkeahlian yang ditugaskan pada pekerjaan konsultansi.
+- **PIC:** *person in charge*, orang yang bertanggung jawab atas suatu hal.
+
+### C.2 Dokumen pengadaan dan kontrak
+- **KAK / TOR:** Kerangka Acuan Kerja, uraian tugas dan keluaran yang diminta pemberi tugas kepada konsultan.
+- **Dokumen pemilihan / dokumen lelang:** dokumen berisi syarat dan ketentuan bagi peserta pengadaan.
+- **Dokumen kualifikasi:** dokumen yang menunjukkan perusahaan memenuhi syarat untuk ikut pengadaan.
+- **HPS:** Harga Perkiraan Sendiri, perkiraan harga dari pemberi tugas sebagai acuan penilaian penawaran.
+- **SPPBJ:** Surat Penunjukan Penyedia Barang/Jasa, surat yang menunjuk pemenang pengadaan.
+- **Kontrak:** perjanjian tertulis antara pemberi tugas dan penyedia.
+- **SPK:** Surat Perintah Kerja, perintah kerja tertulis yang berlaku sebagai bentuk kontrak sederhana.
+- **SPMK:** Surat Perintah Mulai Kerja, perintah resmi untuk memulai pekerjaan. Biasanya menjadi acuan awal masa pelaksanaan.
+- **Addendum:** perubahan tertulis atas isi kontrak yang disepakati para pihak.
+- **CCO / VO:** *Contract Change Order* dan *Variation Order*, istilah untuk perintah perubahan pekerjaan. Pemakaiannya bergantung pada kontrak.
+- **Lingkup pekerjaan:** batas pekerjaan yang wajib dikerjakan menurut kontrak.
+- **Spesifikasi teknis:** persyaratan bahan, mutu, dan cara kerja.
+- **Gambar kerja / *shop drawing*:** gambar rinci pelaksanaan. *Shop drawing* dibuat kontraktor dan disetujui sebelum pekerjaan dimulai.
+- **Gambar terpasang (*as-built drawing*):** gambar kondisi akhir sesuai yang benar-benar terbangun.
+- **Metode pelaksanaan (*method statement*):** uraian cara dan urutan melaksanakan pekerjaan.
+- **NDA / MoU:** perjanjian kerahasiaan / nota kesepahaman.
+- **LPSE / SPSE:** sistem pengadaan secara elektronik milik pemerintah. Nama dan ketentuannya bisa berubah, tanya Admin Kontrak.
+
+### C.3 Biaya dan pembayaran
+- **RAB:** Rencana Anggaran Biaya, perkiraan biaya suatu pekerjaan.
+- **BoQ:** *Bill of Quantities*, daftar volume dan harga satuan tiap item pekerjaan.
+- **AHSP:** Analisis Harga Satuan Pekerjaan, rincian biaya (bahan, upah, alat) untuk satu satuan pekerjaan.
+- **Harga satuan:** harga untuk satu satuan pekerjaan, mis. per meter kubik.
+- **Uang muka:** pembayaran awal sebelum pekerjaan dimulai sesuai kontrak, biasanya dengan jaminan.
+- **Termin:** pembayaran bertahap sesuai kemajuan atau tahapan yang disepakati.
+- **Retensi:** bagian pembayaran yang ditahan sebagai jaminan perbaikan. Aturan rincinya mengikuti kontrak.
+- **Jaminan (penawaran, pelaksanaan, uang muka, pemeliharaan):** jaminan tertulis, biasanya dari bank atau penjamin, agar penyedia memenuhi kewajibannya.
+- **Denda keterlambatan:** sanksi keuangan atas keterlambatan menurut kontrak.
+- **Opname:** pemeriksaan dan penghitungan pekerjaan yang sudah terpasang untuk dasar pembayaran.
+- **MC (*Mutual Check*):** pemeriksaan bersama atas volume atau kondisi pekerjaan oleh penyedia dan pengawas atau pemberi tugas. MC-0 biasanya kondisi awal dan MC-100 kondisi akhir, tetapi penamaan bisa berbeda.
+- **BAP:** Berita Acara Pembayaran.
+- **BAST:** Berita Acara Serah Terima.
+- **PPN / PPh:** pajak. Tarif dan perlakuannya berubah, tanya Keuangan.
+
+### C.4 Pelaksanaan dan mutu
+- **Kurva S:** grafik kemajuan kumulatif rencana dan realisasi terhadap waktu, bentuknya seperti huruf S.
+- **Bobot pekerjaan:** persentase sumbangan sebuah item terhadap seluruh pekerjaan.
+- **Progres:** capaian pekerjaan dibandingkan rencana.
+- **Deviasi:** selisih antara realisasi dan rencana (terlambat atau lebih cepat).
+- **Jalur kritis:** rangkaian pekerjaan yang menentukan kapan proyek selesai.
+- **PCM:** *Pre-Construction Meeting*, rapat persiapan pelaksanaan bersama pemberi tugas.
+- **Laporan harian, mingguan, bulanan:** catatan kemajuan pekerjaan pada periode itu.
+- **Rencana mutu (RMK / RMPK):** dokumen perencanaan cara menjaga mutu pekerjaan. Nama berbeda menurut ketentuan atau klien.
+- **ITP:** *Inspection and Test Plan*, rencana pemeriksaan dan pengujian pekerjaan.
+- **RFI:** umumnya *Request for Inspection* (permohonan pemeriksaan pekerjaan). Pada konteks lain bisa berarti *Request for Information* (permintaan penjelasan). Cek konteksnya.
+- **MAR:** *Material Approval Request*, pengajuan persetujuan material sebelum dipakai.
+- **NCR:** *Non-Conformance Report*, laporan ketidaksesuaian pekerjaan terhadap spesifikasi.
+- **QA / QC:** jaminan mutu (sistemnya) dan pengendalian mutu (pemeriksaan di lapangan).
+- **Instruksi lapangan:** perintah tertulis dari pengawas atau pemberi tugas di lapangan.
+- ***Punch list*:** daftar sisa pekerjaan atau perbaikan menjelang serah terima.
+- **PHO:** *Provisional Hand Over*, serah terima pertama saat pekerjaan selesai.
+- **FHO:** *Final Hand Over*, serah terima akhir setelah masa pemeliharaan.
+- **Masa pemeliharaan:** periode setelah serah terima pertama saat penyedia wajib memperbaiki cacat. Lamanya sesuai kontrak.
+- **Dokumen terkendali:** dokumen yang versi dan penyebarannya dikelola sistem mutu firma.
+- **Formulir:** dokumen isian standar firma, biasanya berkode.
+
+### C.5 Keselamatan kerja (K3)
+- **K3:** Keselamatan dan Kesehatan Kerja.
+- **SMKK / RKK:** Sistem Manajemen Keselamatan Konstruksi / Rencana Keselamatan Konstruksi. Istilah dan ketentuannya dapat berubah, tanya HSE/K3.
+- **HIRADC:** identifikasi bahaya, penilaian risiko, dan penentuan pengendalian.
+- **JSA:** *Job Safety Analysis*, analisis keselamatan untuk suatu pekerjaan.
+- **APD:** alat pelindung diri.
+- **TBM:** *Toolbox Meeting*, pengarahan singkat sebelum mulai kerja.
+- ***Near miss*:** kejadian nyaris celaka tanpa korban atau kerusakan.
+- **Izin kerja (*work permit*):** izin tertulis untuk pekerjaan berisiko tinggi.
+
+### C.6 Kualifikasi usaha
+- **SBU:** Sertifikat Badan Usaha.
+- **SKK:** Sertifikat Kompetensi Kerja (untuk perorangan).
+- **NIB:** Nomor Induk Berusaha.
+Ketentuan perizinan dan sertifikasi berubah, tanya Admin Kontrak atau Legal.
+
+### C.7 Jasa konsultansi
+- **Laporan pendahuluan (*inception report*):** laporan awal tentang pemahaman, metode, dan rencana kerja.
+- **Laporan antara (*interim report*):** laporan temuan sementara.
+- **Draf laporan akhir (*draft final report*):** draf yang dibahas bersama klien.
+- **Laporan akhir (*final report*):** laporan hasil akhir yang diserahkan.
+- **Keluaran (*deliverable*):** hasil yang wajib diserahkan menurut kontrak.
+- **Metodologi:** cara kerja atau pendekatan analisis yang dipakai.
+- **Usulan teknis:** dokumen penawaran konsultan yang menjawab KAK.
+- **EOI:** *Expression of Interest*, pernyataan minat mengikuti seleksi konsultan.
+- **FGD:** *Focus Group Discussion*, diskusi kelompok terarah.
+- **Studi kelayakan (FS):** kajian apakah suatu rencana layak dilaksanakan.
+- **DED:** *Detail Engineering Design*, desain teknis rinci.
+- **UKL-UPL / AMDAL:** dokumen kajian lingkungan. Ketentuannya berubah, tanya Legal atau ahli lingkungan.
+- **SOP:** *Standard Operating Procedure*, prosedur kerja standar.
+- **RACI:** matriks pembagian peran (*Responsible, Accountable, Consulted, Informed*).
+
+---
+
+## D. PETA "TANYA KE SIAPA"
+
+Dipakai saat pengguna tidak punya atau tidak tahu sebuah data. Sebut jenis informasi, tempat biasanya tertulis, dan peran penjawabnya (nama dari File 02 Bagian F). Peran di kolom ketiga mengikuti daftar di File 02 Bagian F.
+
+| Informasi yang dibutuhkan | Biasanya tertulis di | Tanya ke |
+|---|---|---|
+| Nomor kontrak atau SPK, tanggal, nilai kontrak | Kontrak, SPK, addendum | Admin Kontrak |
+| Tanggal mulai, masa pelaksanaan, batas waktu | SPMK, kontrak | Admin Kontrak |
+| Lingkup pekerjaan | Kontrak, KAK, dokumen lelang | Admin Kontrak, Manajer Proyek |
+| Spesifikasi bahan dan mutu | Spesifikasi teknis, kontrak | QA/QC, Pelaksana/Site Manager |
+| Gambar dan detail | Gambar kerja, *shop drawing* | Pelaksana/Site Manager |
+| Volume, harga satuan, nilai pekerjaan | BoQ atau RAB (file hitung firma) | Estimator/QS |
+| Jadwal, rencana dan realisasi progres | File jadwal atau kurva S firma | Manajer Proyek, Pelaksana/Site Manager |
+| Jumlah pekerja, alat, material hari ini, cuaca | Pengamatan di lapangan | Pelaksana/Site Manager |
+| Hasil uji bahan atau pekerjaan | Laporan uji, laboratorium | QA/QC |
+| Kejadian atau rencana keselamatan | Dokumen K3, laporan insiden | HSE/K3 |
+| Penandatangan dan kewenangan | File 02 Bagian E | Admin Pipeline, Direksi |
+| Nomor surat atau dokumen | Register nomor | Document Controller |
+| Format resmi terbaru | File 02 Bagian B dan C | Admin Pipeline |
+| Pasal kontrak, ketentuan hukum, sanksi | Kontrak, peraturan | Legal |
+| Pajak, tagihan, jaminan | Dokumen keuangan | Keuangan |
+| Data personel dan sertifikat | Arsip personel | HRD |
+| Persyaratan lelang, KAK, RFP | Dokumen dari klien | Admin Kontrak, Estimator/QS |
+| Siapa yang meninjau dokumen | File 02 Bagian E | Atasan langsung, Admin Pipeline |
+| Istilah atau singkatan internal firma | File 02 Bagian M | Admin Pipeline |
+
+**Cara bertanya (bisa disalin pengguna):**
+```
+Selamat pagi Pak/Bu [nama]. Saya [nama] di proyek [kode proyek]. Untuk menyusun [dokumen], saya butuh [informasi]. Apakah Bapak/Ibu punya atau tahu di mana dokumennya? Terima kasih.
+```
+Bila peran yang disebut belum terisi di File 02 Bagian F, katakan: "Tanyakan ke atasan langsung Anda atau Admin Pipeline."
+
+# [END OF FILE 04]

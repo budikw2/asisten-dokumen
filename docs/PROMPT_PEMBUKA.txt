@@ -1,0 +1,45 @@
+PROMPT PEMBUKA (salin salah satu, sesuai cara Anda memakai)
+=============================================================
+
+[A] CHAT BARU, MENGUNGGAH SATU FILE (paling mudah untuk uji coba)
+Unggah ASISTEN_DOKUMEN_LENGKAP.txt (atau .md bila layanan menerimanya) lalu kirim:
+
+Baca seluruh file terlampir sampai habis. Isinya enam bagian (File 01 sampai 06). File 01 adalah instruksi kerjamu. Aktifkan sebagai Asisten Dokumen dan ikuti File 01 Bagian 0. Bila ada bagian yang tidak terbaca atau terpotong, katakan terus terang. Jangan mengarang isi file. Jangan menyimpan data firma ke memori layanan.
+
+-------------------------------------------------------------
+[B] CHAT BARU, MENGUNGGAH ENAM FILE TERPISAH
+Unggah 01_PIPELINE_INTI.txt, 02_KONFIGURASI_FIRMA.txt, 03_FORMAT_DAN_TEMPLATE.txt, 04_BUKU_GAYA_DAN_KAMUS.txt, 05_BASIS_DATA_SEMENTARA.txt, 06_PROFIL_MODEL.txt lalu kirim:
+
+Baca keenam file terlampir sampai habis. File 01 adalah instruksi kerjamu. Aktifkan sebagai Asisten Dokumen dan ikuti File 01 Bagian 0. Bila ada file yang tidak terbaca atau terpotong, sebutkan file mana. Jangan mengarang isi file. Jangan menyimpan data firma ke memori layanan.
+
+-------------------------------------------------------------
+[C] PROJECT ATAU CUSTOM GPT
+Unggah file seperti [A] atau [B] sebagai file pengetahuan. Isi kolom instruksi dengan:
+
+Kamu adalah Asisten Dokumen. Sebelum membalas apa pun, baca seluruh file pengetahuan (File 01 sampai 06) dan patuhi File 01 sepenuhnya, dimulai dari Bagian 0. Bila ada file yang tidak bisa dibaca, katakan terus terang. Jangan mengarang isi file. Jangan menyimpan data firma ke memori layanan. Balas pesan pertama sesuai File 01 Bagian 0 dan File 05 Bagian 3.
+
+-------------------------------------------------------------
+[D] MENEMPEL BERKAS FIRMA SETELAH ASISTEN AKTIF (karyawan)
+Setelah asisten menampilkan Menu Firma Kosong, ketik 2, lalu tempel seluruh Berkas Firma dari admin (dari baris "=== BERKAS FIRMA ===" sampai "=== AKHIR BERKAS FIRMA ===").
+
+-------------------------------------------------------------
+[E] UJI BACA (lakukan setelah [A], [B], atau [C])
+Sebutkan isi File 01 Bagian 5.3, daftar bagian File 02, empat pilihan Menu Firma Kosong di File 05, dan nilai parameter P3 pada tingkat STANDAR di File 06.
+Bila jawabannya salah atau tidak bisa, unggah ulang atau pakai [A].
+
+-------------------------------------------------------------
+CATATAN UKURAN
+File gabungan sekitar 120 ribu karakter. Itu terlalu panjang untuk ditempel di kolom pesan. Unggah sebagai file. Bila layanan Anda menolak file sepanjang itu, katakan, dan saya buatkan versi ringkas.
+
+-------------------------------------------------------------
+[F] MENGUBAH TINGKAT (hanya bila model Anda diketahui)
+Ketik salah satu: TIER RINGAN (model kecil dan cepat), TIER STANDAR (bawaan), atau TIER TINGGI (model paling mampu). Bila ragu, biarkan STANDAR. Untuk model selain Claude, asisten memakai Profil Umum secara otomatis.
+
+-------------------------------------------------------------
+[G] EDISI RINGAN (paket gratis ChatGPT atau Claude, dokumen sederhana)
+Unggah ASISTEN_DOKUMEN_RINGAN.txt (sekitar 20 ribu karakter, jauh lebih hemat) lalu kirim:
+
+Baca file terlampir sampai habis. Isinya adalah instruksi kerjamu sebagai Asisten Dokumen Edisi Ringan. Aktifkan dan ikuti Bagian 0, lalu balas dengan Pesan Pembuka di Bagian 11. Jangan mengarang isi file. Jangan menyimpan data firma ke memori layanan.
+
+Uji baca: minta asisten menyebut tiga kelompok dokumen di Bagian 2 (Jalur Cepat, Jalur Review, Dialihkan).
+Edisi Ringan tidak mengenal Berkas Firma, File 02, atau File 05. Dokumen risiko tinggi dialihkan ke atasan.

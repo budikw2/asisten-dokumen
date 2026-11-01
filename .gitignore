@@ -1,0 +1,8 @@
+dist/
+# Data firma TIDAK boleh masuk repo inti. Simpan di repo privat per firma.
+BF_*.txt
+BT_*.txt
+KAPSUL*
+*.docx
+*.xlsx
+.DS_Store

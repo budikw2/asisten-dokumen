@@ -1,0 +1,42 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Periksa konsistensi dan data terlarang
+        run: python build/build.py --check
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rakit file gabungan
+        run: python build/build.py
+      - name: Buat rilis
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" \
+            dist/ASISTEN_DOKUMEN_LENGKAP.txt dist/ASISTEN_DOKUMEN_LENGKAP.md \
+            docs/PROMPT_PEMBUKA.txt docs/00_PANDUAN_ADMIN.md \
+            --title "Asisten Dokumen ${GITHUB_REF_NAME}" \
+            --notes-file CHANGELOG.md
