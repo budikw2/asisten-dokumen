@@ -31,10 +31,6 @@ Admin harus tahu batasnya: tanpa login, asisten tidak bisa memastikan siapa admi
 
 Pipeline ditulis tidak tergantung satu model, tetapi perilaku tiap model berbeda: panjang konteks yang mampu dibaca, kepatuhan pada instruksi panjang, kemampuan membuat file, dan kebiasaan gaya. File 06 mengatur parameter itu. Untuk Claude ada tiga tingkat (Ringan, Standar, Tinggi). Model lain memakai Profil Umum yang lebih ketat. **Setiap kali berganti model atau tingkat, ulangi uji baca dan skenario di Bagian 5.**
 
-## 1C. Edisi Ringan untuk paket gratis
-
-`ASISTEN_DOKUMEN_RINGAN.txt` adalah satu file pendek (sekitar seperlima ukuran paket penuh) untuk karyawan di paket gratis dan dokumen sederhana. Bedanya dari Edisi Penuh: tidak ada Berkas Firma atau konfigurasi firma, hanya 9 jenis dokumen risiko Rendah dan Sedang, semua isian ditanyakan sekaligus, dan dokumen risiko Tinggi dialihkan ke atasan. Pasang dengan Prompt Pembuka G. Uji dengan satu dokumen sederhana di akun gratis yang sebenarnya dan catat di giliran ke berapa batas pemakaian tercapai.
-
 ## 2. Cara memasang
 
 Karena pipeline panjang, jangan menempelnya di kolom instruksi. Ada dua cara.

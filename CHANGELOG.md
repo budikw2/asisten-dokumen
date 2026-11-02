@@ -1,5 +1,9 @@
 # Catatan Perubahan
 
+## Belum dirilis
+- Desain web tujuh halaman di `web/desain/`: beranda, ruang kerja, data firma, format aktif, ponsel, batas pemakaian habis, dan sambungkan AI.
+- Panduan dan prompt pembuka hanya untuk edisi penuh.
+
 ## v2.2
 - File 06 Profil Model: parameter Claude tingkat Ringan, Standar, Tinggi dan Profil Umum; perintah TIER.
 - File gabungan dirakit otomatis dari core/ dan template/.

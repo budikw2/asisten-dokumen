@@ -1,0 +1,21 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-11-02T03:30:00Z" },
+  "title": "Desain Web Asisten Dokumen",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1366, "h": 1920, "title": "1. Beranda", "expand": "fill" },
+    "Kerja.dc.html": { "x": 1446, "y": 0, "w": 1440, "h": 960, "title": "2. Ruang kerja", "expand": "fill" },
+    "Firma.dc.html": { "x": 0, "y": 2040, "w": 1440, "h": 1040, "title": "3. Data firma", "expand": "fill" },
+    "Format.dc.html": { "x": 1520, "y": 2040, "w": 1440, "h": 1000, "title": "4. Format aktif", "expand": "fill" },
+    "Ponsel.dc.html": { "x": 3040, "y": 2040, "w": 390, "h": 844, "title": "5. Ruang kerja di ponsel" },
+    "Batas.dc.html": { "x": 0, "y": 3200, "w": 1440, "h": 900, "title": "6. Batas pemakaian habis" },
+    "Sambung.dc.html": { "x": 1520, "y": 3200, "w": 1440, "h": 1060, "title": "7. Sambungkan AI Anda", "expand": "fill" }
+  },
+  "order": ["Main.dc.html", "Kerja.dc.html", "Firma.dc.html", "Format.dc.html", "Ponsel.dc.html", "Batas.dc.html", "Sambung.dc.html"],
+  "notes": {
+    "judul": { "x": 0, "y": -260, "text": "Asisten Dokumen: desain web, tanpa login", "kind": "title1", "maxW": 2886 }
+  },
+  "designSystems": []
+}

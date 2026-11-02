@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Beranda Asisten Dokumen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A63}a:hover{color:#0A4249}
+</style>
+</helmet>
+<div style="background: #F4F5F2; color: #14202B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 1920px">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 48px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #14202B; font-weight: 600; font-size: 18px; min-height: 44px">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0E5A63"></rect><path d="M10 9h8l4 4v10H10z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"></path><path d="M13 17h6M13 20.5h6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"></path></svg>
+Asisten Dokumen
+</a>
+<nav aria-label="Menu utama" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 600; color: #0E5A63; border-bottom: 2px solid #0E5A63">Beranda</a>
+<a href="Kerja.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Ruang kerja</a>
+<a href="Firma.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Data firma</a>
+<a href="Format.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Format aktif</a>
+<a href="Sambung.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Sambungkan AI</a>
+</nav>
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #E3F0F0; color: #0A4249; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500">
+<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="#0A4249" stroke-width="1.6"></circle><path d="M7 4v3.4l2 1.2" fill="none" stroke="#0A4249" stroke-width="1.6" stroke-linecap="round"></path></svg>
+Tanpa akun, sesi tidak disimpan
+</span>
+</header>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 72px 48px 56px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 16px; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #0E5A63">UNTUK KONTRAKTOR DAN KONSULTAN</p>
+<h1 style="margin: 0; font-size: 52px; line-height: 1.08; font-weight: 600; letter-spacing: -0.01em; max-width: 640px">Dokumen kerja yang rapi dan sesuai format, tanpa perlu berpengalaman.</h1>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.6; color: #3A4652; max-width: 560px">Asisten ini menuntun Anda langkah demi langkah, memastikan format mengikuti ketentuan terbaru dari pusat atau klien, dan menahan dokumen berisiko sampai atasan memeriksanya.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px">
+<a href="Kerja.dc.html" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #0E5A63; color: #FFFFFF; border-radius: 10px; text-decoration: none; font-weight: 600">Mulai bekerja</a>
+<a href="#kemampuan" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 24px; background: #FFFFFF; color: #0E5A63; border: 1px solid #0E5A63; border-radius: 10px; text-decoration: none; font-weight: 600; box-sizing: border-box">Lihat apa yang bisa dilakukan</a>
+</div>
+<ul style="list-style: none; margin: 40px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{jaminan}}" as="j" hint-placeholder-count="3">
+<li style="display: flex; gap: 12px; align-items: flex-start; font-size: 16px; color: #14202B">
+<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" style="flex: none; margin-top: 3px"><circle cx="10" cy="10" r="9" fill="#E3F0F0"></circle><path d="M6 10.3l2.8 2.8L14 7.6" fill="none" stroke="#0E5A63" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span>{{j.teks}}</span>
+</li>
+</sc-for>
+</ul>
+</div>
+
+<div style="flex: 0 1 460px; min-width: 0; width: 100%; max-width: 460px; background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 14px; padding: 28px; box-sizing: border-box">
+<h2 style="margin: 0; font-size: 22px; font-weight: 600">Mulai sesi</h2>
+<p style="margin: 6px 0 20px; font-size: 15px; color: #4A5663">Tidak perlu akun. Data firma Anda dibawa lewat berkas yang Anda simpan sendiri.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{pilihan}}" as="p" hint-placeholder-count="4">
+<a href="{{p.href}}" style="display: flex; gap: 16px; align-items: flex-start; padding: 16px; border: 1px solid #D9DDD6; border-radius: 10px; background: #FFFFFF; text-decoration: none; color: #14202B; min-height: 44px; box-sizing: border-box">
+<span style="flex: none; width: 32px; height: 32px; border-radius: 999px; background: #E3F0F0; color: #0A4249; font-weight: 600; display: inline-flex; align-items: center; justify-content: center">{{p.no}}</span>
+<span style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-weight: 600">{{p.judul}}</span>
+<span style="font-size: 14px; color: #4A5663">{{p.ket}}</span>
+</span>
+</a>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border-top: 1px solid #D9DDD6; border-bottom: 1px solid #D9DDD6">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 48px; box-sizing: border-box">
+<h2 style="margin: 0 0 8px; font-size: 32px; font-weight: 600">Cara kerja</h2>
+<p style="margin: 0 0 32px; color: #4A5663; max-width: 640px">Sembilan langkah, tetapi Anda hanya perlu menjawab satu pertanyaan dalam satu waktu.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<sc-for list="{{langkah}}" as="l" hint-placeholder-count="4">
+<div style="flex: 1 1 240px; min-width: 0; border: 1px solid #D9DDD6; border-radius: 12px; padding: 24px; box-sizing: border-box; background: #F4F5F2">
+<span style="display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #0E5A63">{{l.no}}</span>
+<h3 style="margin: 8px 0 8px; font-size: 20px; font-weight: 600">{{l.judul}}</h3>
+<p style="margin: 0; font-size: 15px; color: #3A4652">{{l.ket}}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 56px 48px; box-sizing: border-box">
+<h2 style="margin: 0 0 8px; font-size: 32px; font-weight: 600">Tiga tingkat risiko</h2>
+<p style="margin: 0 0 32px; color: #4A5663; max-width: 640px">Semakin besar akibat sebuah dokumen, semakin banyak orang berwenang yang ikut memeriksanya.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<sc-for list="{{risiko}}" as="r" hint-placeholder-count="3">
+<div style="flex: 1 1 300px; min-width: 0; background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 24px; box-sizing: border-box">
+<span style="display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; background: {{r.latar}}; color: {{r.teks}}">{{r.nama}}</span>
+<p style="margin: 16px 0 8px; font-weight: 600">{{r.contoh}}</p>
+<p style="margin: 0; font-size: 15px; color: #3A4652">{{r.aturan}}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section id="kemampuan" style="background: #FFFFFF; border-top: 1px solid #D9DDD6">
+<div style="max-width: 1200px; margin: 0 auto; padding: 56px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 40px">
+<div style="flex: 1 1 420px; min-width: 0">
+<h2 style="margin: 0 0 16px; font-size: 28px; font-weight: 600">Yang bisa dibantu</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{bisa}}" as="b" hint-placeholder-count="5">
+<li style="display: flex; gap: 12px; align-items: flex-start"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" style="flex: none; margin-top: 3px"><circle cx="10" cy="10" r="9" fill="#E3F0F0"></circle><path d="M6 10.3l2.8 2.8L14 7.6" fill="none" stroke="#0E5A63" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg><span>{{b.teks}}</span></li>
+</sc-for>
+</ul>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; background: #FFF8EA; border: 1px solid #E8CF9B; border-radius: 12px; padding: 28px; box-sizing: border-box">
+<h2 style="margin: 0 0 8px; font-size: 28px; font-weight: 600; color: #5C3900">Batas yang perlu Anda tahu</h2>
+<p style="margin: 0 0 16px; color: #5C3900; font-size: 15px">Asisten ini pendamping kerja, bukan pengganti atasan atau ahli.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<sc-for list="{{batas}}" as="t" hint-placeholder-count="5">
+<li style="display: flex; gap: 12px; align-items: flex-start; color: #3A2A08"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" style="flex: none; margin-top: 3px"><circle cx="10" cy="10" r="9" fill="#F7E3B5"></circle><path d="M6.5 6.5l7 7M13.5 6.5l-7 7" stroke="#7A4A00" stroke-width="1.8" stroke-linecap="round"></path></svg><span>{{t.teks}}</span></li>
+</sc-for>
+</ul>
+</div>
+</div>
+</section>
+
+<footer style="background: #14202B; color: #D5DBE0; padding: 32px 48px; box-sizing: border-box">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; font-size: 14px">
+<span>Asisten Dokumen, Edisi Pemula v2.2</span>
+<span>Jangan tempel data rahasia: NIK, rekening, kata sandi, harga penawaran.</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1366,"height":1920}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+jaminan: [
+{ teks: 'Format selalu dari pusat atau klien, tidak dari ingatan asisten' },
+{ teks: 'Angka, nama, dan tanggal tidak dikarang: yang kosong ditandai' },
+{ teks: 'Dokumen berisiko ditinjau atasan sebelum dikirim' }
+],
+pilihan: [
+{ no: '1', judul: 'Saya admin: atur data firma', ket: 'Isi data firma lewat percakapan, lalu simpan sebagai Berkas Firma.', href: 'Firma.dc.html' },
+{ no: '2', judul: 'Saya punya Berkas Firma', ket: 'Tempel atau unggah berkas dari admin Anda.', href: 'Firma.dc.html' },
+{ no: '3', judul: 'Lanjut tanpa konfigurasi', ket: 'Dokumen ditandai BELUM RESMI sampai data firma diisi.', href: 'Kerja.dc.html' },
+{ no: '4', judul: 'Lihat apa yang bisa dilakukan', ket: 'Daftar kemampuan dan batasnya, tanpa memulai pekerjaan.', href: '#kemampuan' }
+],
+langkah: [
+{ no: 'LANGKAH 1 DAN 2', judul: 'Pilih dokumen', ket: 'Sekitar 80 jenis dokumen kontraktor dan konsultan. Daftarnya menyesuaikan peran Anda.' },
+{ no: 'LANGKAH 3 DAN 4', judul: 'Cek format dari pusat', ket: 'Anda menempelkan format terbaru. Asisten membacanya dan mengunci strukturnya.' },
+{ no: 'LANGKAH 5 DAN 6', judul: 'Data, lalu rencana', ket: 'Anda melihat rencana kerja sebelum dokumen lengkap ditulis. Yang belum diketahui ditandai [ISI].' },
+{ no: 'LANGKAH 7 SAMPAI 9', judul: 'Draf dan pemeriksaan', ket: 'Draf diperiksa dengan daftar periksa, lalu diserahkan ke peninjau bila berisiko sedang atau tinggi.' }
+],
+risiko: [
+{ nama: 'Rendah', latar: '#E4F2E7', teks: '#1F6B3A', contoh: 'Surat resmi biasa, undangan rapat, notulen, nota dinas', aturan: 'Anda baca ulang, lalu kirim sesuai ketentuan firma.' },
+{ nama: 'Sedang', latar: '#FFF1D6', teks: '#7A4A00', contoh: 'Laporan harian dan mingguan, berita acara, surat tugas', aturan: 'Ditinjau atasan atau peran terkait sebelum dikirim.' },
+{ nama: 'Tinggi', latar: '#FBE4E1', teks: '#9A2A1E', contoh: 'Penawaran, kontrak, penagihan, K3 dan insiden, serah terima', aturan: 'Dikerjakan bersama peran berwenang dan tidak pernah dinyatakan siap kirim sebelum diperiksa.' }
+],
+bisa: [
+{ teks: 'Menyusun surat, undangan, notulen, laporan, dan berita acara' },
+{ teks: 'Merapikan atau merevisi dokumen yang Anda punya' },
+{ teks: 'Menanggapi komentar klien atau atasan' },
+{ teks: 'Memeriksa ejaan dan tata tulis, serta menjelaskan istilah' },
+{ teks: 'Menunjukkan siapa yang harus ditanya bila data belum Anda punya' }
+],
+batas: [
+{ teks: 'Tidak menghitung RAB, BoQ, kurva S, atau pajak' },
+{ teks: 'Tidak memberi nasihat hukum, pajak, atau keselamatan yang final' },
+{ teks: 'Tidak membuka tautan atau file di server firma: tempel isinya' },
+{ teks: 'Tidak mengarang angka, nama, tanggal, nomor, atau tanda tangan' },
+{ teks: 'Tidak memalsukan progres, tanggal, atau hasil uji' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

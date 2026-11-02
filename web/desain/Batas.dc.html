@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Batas Pemakaian Habis</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A63}a:hover{color:#0A4249}
+</style>
+</helmet>
+<div style="position: relative; width: 1440px; height: 900px; box-sizing: border-box; overflow: hidden; background: #F4F5F2; color: #14202B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.55">
+
+<div aria-hidden="true" style="display: flex; flex-direction: column; height: 100%">
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px 48px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6; min-height: 69px; box-sizing: border-box; font-weight: 600; font-size: 18px">
+<svg width="32" height="32" viewBox="0 0 32 32"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0E5A63"></rect><path d="M10 9h8l4 4v10H10z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"></path><path d="M13 17h6M13 20.5h6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"></path></svg>
+Asisten Dokumen
+</div>
+<div style="flex: 1; display: flex">
+<div style="flex: 0 0 272px; background: #FFFFFF; border-right: 1px solid #D9DDD6"></div>
+<div style="flex: 1; padding: 32px 40px; display: flex; flex-direction: column; gap: 20px">
+<div style="height: 90px; background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px"></div>
+<div style="height: 60px; background: #0E5A63; border-radius: 14px; width: 40%; align-self: flex-end"></div>
+<div style="height: 280px; background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px"></div>
+</div>
+<div style="flex: 0 0 440px; background: #FFFFFF; border-left: 1px solid #D9DDD6"></div>
+</div>
+</div>
+
+<div style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: rgba(20, 32, 43, 0.62); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box">
+<div role="alertdialog" aria-modal="true" aria-labelledby="judul-batas" aria-describedby="isi-batas" style="width: 100%; max-width: 760px; background: #FFFFFF; border-radius: 16px; padding: 36px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px">
+
+<div style="display: flex; gap: 18px; align-items: flex-start">
+<svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" style="flex: none"><circle cx="22" cy="22" r="21" fill="#FFF1D6"></circle><path d="M12 28a10 10 0 1 1 20 0" fill="none" stroke="#7A4A00" stroke-width="2.4" stroke-linecap="round"></path><path d="M22 28l-5-7" stroke="#7A4A00" stroke-width="2.4" stroke-linecap="round"></path></svg>
+<div>
+<h2 id="judul-batas" style="margin: 0 0 6px; font-size: 26px; line-height: 1.2; font-weight: 600">Batas pemakaian sesi ini sudah habis</h2>
+<p id="isi-batas" style="margin: 0; color: #3A4652">Pekerjaan Anda masih aman di layar ini selama halaman tetap terbuka. Simpan Kapsul Sesi dulu supaya bisa dilanjutkan kapan saja.</p>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 18px; background: #F4F5F2; border: 1px solid #D9DDD6; border-radius: 10px">
+<div style="font-size: 15px"><span style="font-weight: 600">Undangan rapat (D-03)</span><br><span style="color: #4A5663">Langkah 6 dari 9, proyek P-01</span></div>
+<span style="padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; background: #FFF1D6; color: #7A4A00">Kapsul belum disimpan</span>
+</div>
+
+<div>
+<p style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #4A5663">LANGKAH 1: SIMPAN DULU</p>
+<button type="button" style="min-height: 48px; width: 100%; padding: 0 20px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Unduh Kapsul Sesi (.txt)</button>
+</div>
+
+<div>
+<p style="margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #4A5663">LANGKAH 2: PILIH CARA MELANJUTKAN</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px">
+<sc-for list="{{pilihan}}" as="p" hint-placeholder-count="2">
+<div style="flex: 1 1 300px; min-width: 0; border: 1.5px solid {{p.garis}}; border-radius: 12px; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; background: {{p.latar}}">
+<h3 style="margin: 0; font-size: 18px; font-weight: 600">{{p.judul}}</h3>
+<p style="margin: 0; font-size: 14px; color: #3A4652">{{p.ket}}</p>
+<a href="{{p.href}}" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; border-radius: 10px; text-decoration: none; font-weight: 600; background: {{p.tombolLatar}}; color: {{p.tombolWarna}}; border: 1px solid #0E5A63; box-sizing: border-box">{{p.tombol}}</a>
+</div>
+</sc-for>
+</div>
+</div>
+
+<p style="margin: 0; font-size: 13px; color: #4A5663">Biaya pemakaian AI milik Anda ditagih oleh penyedianya kepada pemilik kunci, bukan oleh situs ini.</p>
+</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+pilihan: [
+{ judul: 'Pakai AI milik saya', ket: 'Masukkan kunci API dari akun Anda sendiri dan lanjutkan dari langkah 6 tanpa menunggu.', tombol: 'Sambungkan AI saya', href: 'Sambung.dc.html', garis: '#0E5A63', latar: '#E3F0F0', tombolLatar: '#0E5A63', tombolWarna: '#FFFFFF' },
+{ judul: 'Tunggu kuota pulih', ket: 'Kuota situs diperkirakan pulih sekitar pukul 15.40 WIB. Saat kembali, tempel Kapsul Sesi dan pilih menu 5.', tombol: 'Tutup dan kembali nanti', href: 'Kerja.dc.html', garis: '#D9DDD6', latar: '#FFFFFF', tombolLatar: '#FFFFFF', tombolWarna: '#0E5A63' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

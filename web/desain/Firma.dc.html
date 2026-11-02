@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Data Firma</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A63}a:hover{color:#0A4249}
+</style>
+</helmet>
+<div style="background: #F4F5F2; color: #14202B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 1040px; display: flex; flex-direction: column">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 48px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #14202B; font-weight: 600; font-size: 18px; min-height: 44px">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0E5A63"></rect><path d="M10 9h8l4 4v10H10z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"></path><path d="M13 17h6M13 20.5h6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"></path></svg>
+Asisten Dokumen
+</a>
+<nav aria-label="Menu utama" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Beranda</a>
+<a href="Kerja.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Ruang kerja</a>
+<a href="Firma.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 600; color: #0E5A63; border-bottom: 2px solid #0E5A63">Data firma</a>
+<a href="Format.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Format aktif</a>
+<a href="Sambung.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Sambungkan AI</a>
+</nav>
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #E3F0F0; color: #0A4249; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500">Tanpa akun, sesi tidak disimpan</span>
+</header>
+
+<div style="flex: 1; max-width: 1344px; width: 100%; margin: 0 auto; padding: 32px 48px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+<nav aria-label="Bagian data firma" style="flex: 0 0 280px; background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 16px; box-sizing: border-box">
+<p style="margin: 4px 8px 12px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #4A5663">BAGIAN</p>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px">
+<sc-for list="{{bagian}}" as="b" hint-placeholder-count="14">
+<li>
+<a href="Firma.dc.html" aria-current="{{b.cur}}" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 44px; padding: 0 10px; box-sizing: border-box; border-radius: 8px; text-decoration: none; background: {{b.latar}}; color: #14202B; font-weight: {{b.berat}}">
+<span><span style="display: inline-block; width: 22px; color: #4A5663; font-weight: 600">{{b.huruf}}</span>{{b.nama}}</span>
+<span style="font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: {{b.chipLatar}}; color: {{b.chipWarna}}">{{b.status}}</span>
+</a>
+</li>
+</sc-for>
+</ul>
+</nav>
+
+<main style="flex: 1 1 520px; min-width: 0">
+<p style="margin: 0 0 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.06em; color: #0E5A63">BAGIAN B, PRIORITAS 1</p>
+<h1 style="margin: 0 0 8px; font-size: 32px; font-weight: 600">Pusat: penerbit format</h1>
+<p style="margin: 0 0 28px; color: #3A4652; max-width: 620px">Format dokumen datang dari "pusat" dan bisa berubah kapan saja. Isian ini memberi tahu asisten dan karyawan ke mana harus bertanya.</p>
+
+<form style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+
+<fieldset style="border: 0; margin: 0; padding: 0">
+<legend style="padding: 0; font-weight: 600; margin-bottom: 4px">Siapa "pusat" bagi firma ini?</legend>
+<p style="margin: 0 0 12px; font-size: 14px; color: #4A5663">Pilih yang paling sering menerbitkan format dokumen Anda.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px">
+<sc-for list="{{pusat}}" as="p" hint-placeholder-count="4">
+<label style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; box-sizing: border-box; border: 1.5px solid {{p.garis}}; border-radius: 10px; background: {{p.latar}}; font-weight: 500; cursor: pointer">
+<input type="radio" name="pusat" checked="{{p.pilih}}" style="width: 18px; height: 18px; accent-color: #0E5A63; margin: 0">
+{{p.nama}}
+</label>
+</sc-for>
+</div>
+</fieldset>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="kanal" style="font-weight: 600">Kanal pemberitahuan format baru</label>
+<p style="margin: 0; font-size: 14px; color: #4A5663">Lewat apa format baru diumumkan, dan siapa yang menyebarkannya.</p>
+<input id="kanal" type="text" value="Grup WhatsApp admin, disebarkan oleh Admin Pipeline" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="pic" style="font-weight: 600">PIC pembaruan format</label>
+<input id="pic" type="text" placeholder="Nama admin" aria-describedby="pic-bantuan" style="min-height: 44px; box-sizing: border-box; border: 1.5px solid #B86E00; border-radius: 8px; padding: 0 14px; font: inherit">
+<span id="pic-bantuan" style="font-size: 13px; color: #7A4A00">Belum diisi. Tanpa ini karyawan tidak tahu siapa yang ditanya.</span>
+</div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="kontak" style="font-weight: 600">Kontak kerja</label>
+<input id="kontak" type="text" placeholder="Surel atau nomor kantor" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+<span style="font-size: 13px; color: #4A5663">Kontak kerja saja, bukan nomor pribadi.</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="folder" style="font-weight: 600">Lokasi folder format terbaru</label>
+<p style="margin: 0; font-size: 14px; color: #4A5663">Nama folder atau tautan untuk dibagikan ke karyawan.</p>
+<input id="folder" type="text" placeholder="Contoh: folder Format Resmi di penyimpanan firma" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+</div>
+
+<p style="margin: 0; padding: 12px 14px; background: #F4F5F2; border-radius: 8px; font-size: 14px; color: #3A4652">Asisten tidak bisa membuka folder atau tautan. Karyawan tetap menempelkan isi format ke ruang kerja.</p>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between">
+<button type="button" style="min-height: 44px; padding: 0 20px; border: 1px solid #0E5A63; background: #FFFFFF; color: #0E5A63; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Lewati dulu</button>
+<button type="submit" style="min-height: 44px; padding: 0 24px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Simpan dan lanjut ke C</button>
+</div>
+</form>
+</main>
+
+<aside style="flex: 0 0 340px; display: flex; flex-direction: column; gap: 20px">
+<div style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 24px; box-sizing: border-box">
+<h2 style="margin: 0 0 4px; font-size: 18px; font-weight: 600">Kelengkapan</h2>
+<p style="margin: 0 0 14px; font-size: 14px; color: #4A5663">6 dari 14 bagian lengkap, 2 sebagian</p>
+<div role="progressbar" aria-label="Kelengkapan data firma" aria-valuemin="0" aria-valuemax="14" aria-valuenow="6" style="height: 10px; border-radius: 999px; background: #E6E9E4; overflow: hidden; display: flex">
+<div style="width: 43%; background: #0E5A63"></div>
+<div style="width: 14%; background: #8FB9BD"></div>
+</div>
+<p style="margin: 18px 0 8px; font-size: 14px; font-weight: 600">Paling penting yang belum terisi</p>
+<ol style="margin: 0; padding-left: 20px; font-size: 15px; display: flex; flex-direction: column; gap: 6px">
+<li>C Format berlaku: daftar format dari pusat</li>
+<li>E Kewenangan: siapa meninjau dan menandatangani</li>
+<li>F Peran: nama untuk tiap peran</li>
+</ol>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 600">Berkas Firma</h2>
+<p style="margin: 0; font-size: 14px; color: #4A5663">Karena sesi tidak disimpan, data firma dibawa lewat berkas yang Anda simpan sendiri.</p>
+<button type="button" style="min-height: 44px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Unduh Berkas Firma</button>
+<button type="button" style="min-height: 44px; border: 1px solid #0E5A63; background: #FFFFFF; color: #0E5A63; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Tempel atau unggah berkas</button>
+<p style="margin: 0; font-size: 13px; color: #4A5663">Revisi saat ini: 3. Perubahan baru berlaku untuk karyawan lain setelah Berkas Firma yang baru dibagikan.</p>
+</div>
+
+<div style="background: #FFF8EA; border: 1px solid #E8CF9B; border-radius: 12px; padding: 20px; box-sizing: border-box; font-size: 14px; color: #3A2A08">
+<p style="margin: 0 0 6px; font-weight: 600">Sebelum menyimpan</p>
+<p style="margin: 0">Berkas ini memuat nama dan kontak kerja pegawai. Simpan di folder resmi firma. Jangan isi NIK, rekening, atau kata sandi.</p>
+</div>
+</aside>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1040}}'>
+class Component extends DCLogic {
+renderVals() {
+const data = [
+['A', 'Identitas', 'LENGKAP'],
+['B', 'Pusat', 'SEBAGIAN'],
+['C', 'Format berlaku', 'SEBAGIAN'],
+['D', 'Penomoran', 'LENGKAP'],
+['E', 'Kewenangan', 'KOSONG'],
+['F', 'Peran', 'KOSONG'],
+['G', 'Data dan akun', 'KOSONG'],
+['H', 'Pengungkapan', 'KOSONG'],
+['I', 'Gaya', 'LENGKAP'],
+['J', 'Tata letak', 'LENGKAP'],
+['K', 'Penyesuaian risiko', 'KOSONG'],
+['L', 'Pengaturan', 'LENGKAP'],
+['M', 'Glosarium', 'KOSONG'],
+['N', 'Riwayat', 'LENGKAP']
+];
+const warna = {
+LENGKAP: ['#E4F2E7', '#1F6B3A'],
+SEBAGIAN: ['#FFF1D6', '#7A4A00'],
+KOSONG: ['#EEF0EC', '#3A4652']
+};
+const bagian = data.map(([huruf, nama, status]) => {
+const kini = huruf === 'B';
+return {
+huruf, nama, status,
+cur: kini ? 'page' : 'false',
+latar: kini ? '#E3F0F0' : 'transparent',
+berat: kini ? '600' : '500',
+chipLatar: warna[status][0],
+chipWarna: warna[status][1]
+};
+});
+const pusat = ['Kantor pusat firma', 'Kementerian atau lembaga', 'Klien', 'Lainnya'].map((nama, i) => ({
+nama,
+pilih: i === 0,
+garis: i === 0 ? '#0E5A63' : '#8B96A1',
+latar: i === 0 ? '#E3F0F0' : '#FFFFFF'
+}));
+return { bagian, pusat };
+}
+}
+</script>
+</body>
+</html>

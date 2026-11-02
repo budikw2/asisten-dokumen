@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Sambungkan AI Anda</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A63}a:hover{color:#0A4249}
+</style>
+</helmet>
+<div style="background: #F4F5F2; color: #14202B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 1060px; display: flex; flex-direction: column">
+
+<header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 48px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 12px; text-decoration: none; color: #14202B; font-weight: 600; font-size: 18px; min-height: 44px">
+<svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0E5A63"></rect><path d="M10 9h8l4 4v10H10z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"></path><path d="M13 17h6M13 20.5h6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"></path></svg>
+Asisten Dokumen
+</a>
+<nav aria-label="Menu utama" style="display: flex; flex-wrap: wrap; gap: 4px">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Beranda</a>
+<a href="Kerja.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Ruang kerja</a>
+<a href="Firma.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Data firma</a>
+<a href="Format.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 500; color: #14202B">Format aktif</a>
+<a href="Sambung.dc.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 14px; box-sizing: border-box; text-decoration: none; font-weight: 600; color: #0E5A63; border-bottom: 2px solid #0E5A63">Sambungkan AI</a>
+</nav>
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #FFF1D6; color: #5C3900; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500">Memakai kuota situs</span>
+</header>
+
+<div style="flex: 1; max-width: 1344px; width: 100%; margin: 0 auto; padding: 32px 48px 48px; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+
+<main style="flex: 1 1 560px; min-width: 0">
+<h1 style="margin: 0 0 8px; font-size: 32px; font-weight: 600">Sambungkan AI Anda</h1>
+<p style="margin: 0 0 24px; color: #3A4652; max-width: 620px">Bila kuota situs habis, Anda bisa melanjutkan memakai kunci API dari akun Anda sendiri. Aturan kerja dan format tetap sama.</p>
+
+<form style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px">
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="penyedia" style="font-weight: 600">Penyedia</label>
+<select id="penyedia" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 12px; font: inherit; background: #FFFFFF">
+<option>Pilih penyedia</option>
+<option>OpenAI</option>
+<option>Anthropic</option>
+<option>Google</option>
+<option>DeepSeek</option>
+<option selected>Lainnya (kompatibel)</option>
+</select>
+</div>
+<div style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 6px">
+<label for="model" style="font-weight: 600">Nama model</label>
+<input id="model" type="text" placeholder="Salin dari akun penyedia Anda" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="endpoint" style="font-weight: 600">Alamat layanan</label>
+<input id="endpoint" type="url" placeholder="https://" aria-describedby="endpoint-bantuan" style="min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+<span id="endpoint-bantuan" style="font-size: 13px; color: #4A5663">Hanya perlu diisi untuk penyedia "Lainnya". Layanan harus kompatibel dengan format permintaan yang umum dipakai.</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="kunci" style="font-weight: 600">Kunci API</label>
+<div style="display: flex; gap: 8px">
+<input id="kunci" type="password" placeholder="Tempel kunci di sini" autocomplete="off" aria-describedby="kunci-bantuan" style="flex: 1; min-width: 0; min-height: 44px; box-sizing: border-box; border: 1px solid #8B96A1; border-radius: 8px; padding: 0 14px; font: inherit">
+<button type="button" style="min-height: 44px; padding: 0 16px; border: 1px solid #0E5A63; background: #FFFFFF; color: #0E5A63; border-radius: 8px; font: inherit; font-weight: 600; cursor: pointer">Tampilkan</button>
+</div>
+<span id="kunci-bantuan" style="font-size: 13px; color: #4A5663">Kunci tidak ditampilkan lagi setelah disimpan. Gunakan kunci khusus dengan batas pengeluaran.</span>
+</div>
+
+<fieldset style="border: 0; margin: 0; padding: 0">
+<legend style="padding: 0; font-weight: 600; margin-bottom: 10px">Di mana kunci disimpan</legend>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<sc-for list="{{simpan}}" as="s" hint-placeholder-count="2">
+<label style="display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid {{s.garis}}; border-radius: 10px; background: {{s.latar}}; cursor: pointer">
+<input type="radio" name="simpan" checked="{{s.pilih}}" style="width: 18px; height: 18px; margin: 3px 0 0; accent-color: #0E5A63">
+<span><span style="font-weight: 600">{{s.judul}}</span><br><span style="font-size: 14px; color: #3A4652">{{s.ket}}</span></span>
+</label>
+</sc-for>
+</div>
+</fieldset>
+
+<label style="display: flex; align-items: flex-start; gap: 12px; font-size: 15px; cursor: pointer">
+<input type="checkbox" style="width: 18px; height: 18px; margin: 3px 0 0; accent-color: #0E5A63">
+<span>Saya memahami bahwa biaya ditagih ke akun pemilik kunci, dan data yang saya kirim tunduk pada kebijakan penyedia yang saya pilih.</span>
+</label>
+
+<div role="status" style="display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; background: #E4F2E7; border: 1px solid #A8D2B5; border-radius: 10px; color: #14502B">
+<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="10" cy="10" r="9" fill="#1F6B3A"></circle><path d="M6 10.3l2.8 2.8L14 7.6" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span><strong>Uji sambungan berhasil.</strong> Contoh hasil: penyedia menjawab dalam 1,2 detik. Jika gagal, pesan di sini menyebut sebabnya, misalnya kunci salah, saldo habis, atau alamat tidak bisa dijangkau.</span>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between">
+<button type="button" style="min-height: 48px; padding: 0 22px; border: 1px solid #0E5A63; background: #FFFFFF; color: #0E5A63; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Uji sambungan</button>
+<button type="submit" style="min-height: 48px; padding: 0 24px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Simpan dan lanjutkan dari langkah 6</button>
+</div>
+</form>
+</main>
+
+<aside style="flex: 0 0 380px; display: flex; flex-direction: column; gap: 20px">
+
+<div style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 24px; box-sizing: border-box">
+<h2 style="margin: 0 0 12px; font-size: 18px; font-weight: 600">Cara melanjutkan</h2>
+<ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; font-size: 15px">
+<sc-for list="{{cara}}" as="c" hint-placeholder-count="4">
+<li>{{c.teks}}</li>
+</sc-for>
+</ol>
+</div>
+
+<div style="background: #FFF8EA; border: 1px solid #E8CF9B; border-radius: 12px; padding: 24px; box-sizing: border-box; color: #3A2A08">
+<h2 style="margin: 0 0 12px; font-size: 18px; font-weight: 600; color: #5C3900">Yang perlu Anda ketahui</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+<sc-for list="{{catatan}}" as="n" hint-placeholder-count="5">
+<li style="display: flex; gap: 10px; align-items: flex-start"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" style="flex: none; margin-top: 2px"><circle cx="9" cy="9" r="8" fill="#F7E3B5"></circle><path d="M9 5v5M9 12.2v.6" stroke="#7A4A00" stroke-width="1.8" stroke-linecap="round"></path></svg><span>{{n.teks}}</span></li>
+</sc-for>
+</ul>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 20px 24px; box-sizing: border-box; font-size: 14px; color: #3A4652">
+<p style="margin: 0 0 6px; font-weight: 600; color: #14202B">Bila saldo kunci Anda juga habis</p>
+<p style="margin: 0">Situs menampilkan peringatan yang sama. Simpan Kapsul Sesi, lalu ganti kunci atau tunggu kuota pulih.</p>
+</div>
+
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1060}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+simpan: [
+{ judul: 'Hanya sampai tab ini ditutup', ket: 'Disarankan. Kunci hilang saat tab ditutup, jadi aman di komputer bersama.', pilih: true, garis: '#0E5A63', latar: '#E3F0F0' },
+{ judul: 'Ingat di perangkat ini', ket: 'Kunci tersimpan di peramban ini sampai Anda menghapusnya. Jangan dipakai di komputer bersama.', pilih: false, garis: '#8B96A1', latar: '#FFFFFF' }
+],
+cara: [
+{ teks: 'Simpan Kapsul Sesi (unduh berkas .txt).' },
+{ teks: 'Isi formulir ini dan jalankan uji sambungan.' },
+{ teks: 'Kembali ke ruang kerja. Kapsul dipulihkan otomatis bila Anda masih di halaman yang sama, atau tempel kapsul dan pilih menu 5.' },
+{ teks: 'Asisten melanjutkan dari langkah terakhir, dengan aturan dan format yang sama.' }
+],
+catatan: [
+{ teks: 'Rancangan: kunci hanya disimpan di peramban Anda dan tidak dikirim ke server situs untuk disimpan.' },
+{ teks: 'Gunakan kunci khusus dengan batas pengeluaran, dan cabut setelah selesai.' },
+{ teks: 'Periksa kebijakan firma Anda tentang akun AI yang diizinkan. Kunci pribadi mungkin tidak boleh dipakai untuk dokumen kantor.' },
+{ teks: 'Data yang Anda tempel dikirim ke penyedia pilihan Anda. Tetap jangan tempel NIK, rekening, kata sandi, atau harga penawaran.' },
+{ teks: 'Mutu dan kepatuhan pada aturan bisa berbeda antar model. Periksa dokumen seperti biasa.' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

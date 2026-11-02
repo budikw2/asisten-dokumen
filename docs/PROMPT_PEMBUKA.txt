@@ -34,12 +34,3 @@ File gabungan sekitar 120 ribu karakter. Itu terlalu panjang untuk ditempel di k
 -------------------------------------------------------------
 [F] MENGUBAH TINGKAT (hanya bila model Anda diketahui)
 Ketik salah satu: TIER RINGAN (model kecil dan cepat), TIER STANDAR (bawaan), atau TIER TINGGI (model paling mampu). Bila ragu, biarkan STANDAR. Untuk model selain Claude, asisten memakai Profil Umum secara otomatis.
-
--------------------------------------------------------------
-[G] EDISI RINGAN (paket gratis ChatGPT atau Claude, dokumen sederhana)
-Unggah ASISTEN_DOKUMEN_RINGAN.txt (sekitar 20 ribu karakter, jauh lebih hemat) lalu kirim:
-
-Baca file terlampir sampai habis. Isinya adalah instruksi kerjamu sebagai Asisten Dokumen Edisi Ringan. Aktifkan dan ikuti Bagian 0, lalu balas dengan Pesan Pembuka di Bagian 11. Jangan mengarang isi file. Jangan menyimpan data firma ke memori layanan.
-
-Uji baca: minta asisten menyebut tiga kelompok dokumen di Bagian 2 (Jalur Cepat, Jalur Review, Dialihkan).
-Edisi Ringan tidak mengenal Berkas Firma, File 02, atau File 05. Dokumen risiko tinggi dialihkan ke atasan.

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Ruang Kerja di Ponsel</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+body{margin:0}
+a{color:#0E5A63}a:hover{color:#0A4249}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F4F5F2; color: #14202B; font-family: 'IBM Plex Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.5; display: flex; flex-direction: column; overflow: hidden">
+
+<header style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 16px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<a href="Main.dc.html" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #14202B; font-weight: 600; min-height: 44px">
+<svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="7" fill="#0E5A63"></rect><path d="M10 9h8l4 4v10H10z" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"></path><path d="M13 17h6M13 20.5h6" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"></path></svg>
+Asisten Dokumen
+</a>
+<button type="button" aria-label="Buka menu" style="width: 44px; height: 44px; border: 1px solid #D9DDD6; background: #FFFFFF; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke="#14202B" stroke-width="1.8" stroke-linecap="round"></path></svg>
+</button>
+</header>
+
+<div style="padding: 12px 16px 10px; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+<span style="font-size: 14px; font-weight: 600; color: #0E5A63">Langkah 6 dari 9</span>
+<span style="font-size: 13px; color: #4A5663">Proyek P-01</span>
+</div>
+<div role="progressbar" aria-label="Kemajuan langkah" aria-valuemin="1" aria-valuemax="9" aria-valuenow="6" style="margin-top: 8px; height: 6px; border-radius: 999px; background: #E6E9E4; overflow: hidden">
+<div style="width: 66%; height: 100%; background: #0E5A63"></div>
+</div>
+</div>
+
+<div role="status" style="padding: 10px 16px; background: #FFF1D6; border-bottom: 1px solid #E8CF9B; color: #5C3900; font-size: 13px; line-height: 1.4">
+<strong>Kuota sesi tinggal sekitar 12%.</strong> Simpan Kapsul agar pekerjaan aman. <a href="Sambung.dc.html" style="color: #5C3900; font-weight: 600">Pakai AI milik saya</a>
+</div>
+
+<div role="tablist" aria-label="Tampilan" style="display: flex; background: #FFFFFF; border-bottom: 1px solid #D9DDD6">
+<sc-for list="{{tab}}" as="t" hint-placeholder-count="3">
+<button role="tab" type="button" aria-selected="{{t.aktif}}" style="flex: 1; min-height: 44px; border: 0; border-bottom: 2px solid {{t.garis}}; background: transparent; font: inherit; font-weight: {{t.berat}}; color: {{t.warna}}; cursor: pointer">{{t.nama}}</button>
+</sc-for>
+</div>
+
+<div style="flex: 1; min-height: 0; overflow: auto; padding: 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="align-self: flex-end; max-width: 82%; background: #0E5A63; color: #FFFFFF; border-radius: 14px 14px 4px 14px; padding: 10px 14px; font-size: 15px">Belum ada, pakai template cadangan.</div>
+
+<div style="background: #FFFFFF; border: 1px solid #D9DDD6; border-radius: 12px; padding: 16px">
+<p style="margin: 0 0 2px; font-size: 12px; font-weight: 600; color: #0E5A63">Rencana kerja</p>
+<h2 style="margin: 0 0 10px; font-size: 18px; font-weight: 600">Undangan rapat (D-03)</h2>
+<dl style="margin: 0; display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 6px 10px; font-size: 14px">
+<sc-for list="{{rencana}}" as="r" hint-placeholder-count="4">
+<dt style="color: #4A5663">{{r.label}}</dt>
+<dd style="margin: 0; font-weight: 500">{{r.isi}}</dd>
+</sc-for>
+</dl>
+<p style="margin: 12px 0 0; padding: 8px 10px; background: #FFF8EA; border: 1px dashed #B86E00; border-radius: 8px; font-size: 13px; color: #5C3900">BELUM RESMI sampai format dikonfirmasi.</p>
+<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 14px">
+<button type="button" style="min-height: 44px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">1. Setuju, tulis drafnya</button>
+<button type="button" style="min-height: 44px; border: 1px solid #0E5A63; background: #FFFFFF; color: #0E5A63; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">2. Ubah rencana</button>
+</div>
+</div>
+</div>
+
+<form style="padding: 12px 16px 16px; background: #FFFFFF; border-top: 1px solid #D9DDD6">
+<div style="display: flex; gap: 8px; align-items: flex-end">
+<label for="pesan-hp" style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Pesan untuk asisten</label>
+<textarea id="pesan-hp" rows="1" placeholder="Ketik angka atau jawaban" style="flex: 1; min-width: 0; box-sizing: border-box; min-height: 44px; border: 1px solid #8B96A1; border-radius: 10px; padding: 10px 12px; font: inherit; resize: none"></textarea>
+<button type="submit" style="min-height: 44px; padding: 0 18px; border: 0; background: #0E5A63; color: #FFFFFF; border-radius: 10px; font: inherit; font-weight: 600; cursor: pointer">Kirim</button>
+</div>
+<p style="margin: 8px 0 0; font-size: 12px; color: #4A5663">Jangan tempel NIK, rekening, kata sandi, atau harga penawaran.</p>
+</form>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+const tab = ['Chat', 'Draf', 'Status'].map((n, i) => ({
+nama: n,
+aktif: i === 0 ? 'true' : 'false',
+garis: i === 0 ? '#0E5A63' : 'transparent',
+berat: i === 0 ? '600' : '500',
+warna: i === 0 ? '#0E5A63' : '#3A4652'
+}));
+const rencana = [
+{ label: 'Risiko', isi: 'Rendah, Anda baca ulang' },
+{ label: 'Format', isi: 'Template cadangan' },
+{ label: 'Isi', isi: 'Pembuka, waktu dan tempat, kontak' },
+{ label: 'Kosong', isi: '7 isian, tanya atasan langsung' }
+];
+return { tab, rencana };
+}
+}
+</script>
+</body>
+</html>
