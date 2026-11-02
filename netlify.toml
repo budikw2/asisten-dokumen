@@ -1,0 +1,40 @@
+# Situs web dirakit dari desain di web/desain/ menjadi halaman statis di _site/.
+[build]
+  command = "node web/rakit.mjs"
+  publish = "_site"
+
+# Alamat lama berkas desain tetap bisa dibuka
+[[redirects]]
+  from = "/Main.dc.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/Kerja.dc.html"
+  to = "/kerja"
+  status = 301
+
+[[redirects]]
+  from = "/Firma.dc.html"
+  to = "/firma"
+  status = 301
+
+[[redirects]]
+  from = "/Format.dc.html"
+  to = "/format"
+  status = 301
+
+[[redirects]]
+  from = "/Ponsel.dc.html"
+  to = "/ponsel"
+  status = 301
+
+[[redirects]]
+  from = "/Batas.dc.html"
+  to = "/batas"
+  status = 301
+
+[[redirects]]
+  from = "/Sambung.dc.html"
+  to = "/sambung"
+  status = 301

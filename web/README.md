@@ -16,3 +16,7 @@ Catatan rancangan:
 - Tanpa login. Data firma dibawa lewat Berkas Firma, pekerjaan lewat Kapsul Sesi.
 - Situs tidak menampilkan nama agen atau model yang dipakai. Nama penyedia hanya muncul sebagai pilihan pengguna di halaman 7.
 - Kunci API milik pengguna dirancang hanya disimpan di peramban. Ini harus dipastikan saat implementasi.
+
+## Situs
+
+Netlify merakit desain ini menjadi halaman statis saat deploy (`node web/rakit.mjs`, hasil di `_site/`, tidak masuk repo). Alamatnya: `/` (Beranda), `/kerja`, `/firma`, `/format`, `/ponsel`, `/batas`, `/sambung`. Alamat lama `*.dc.html` dialihkan ke alamat baru.
