@@ -3,6 +3,7 @@
 ## Belum dirilis
 - Desain web tujuh halaman di `web/desain/`: beranda, ruang kerja, data firma, format aktif, ponsel, batas pemakaian habis, dan sambungkan AI.
 - Panduan dan prompt pembuka hanya untuk edisi penuh.
+- Hasil uji skenario putaran 1 dicatat di `tests/hasil_uji.md` (dua temuan urutan balasan pertama, skenario 8 dan 11 belum teruji).
 
 ## v2.2
 - File 06 Profil Model: parameter Claude tingkat Ringan, Standar, Tinggi dan Profil Umum; perintah TIER.
